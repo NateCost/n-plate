@@ -6,7 +6,6 @@ disabled_rules: # rule identifiers to exclude from running
     - colon
     - trailing_semicolon
     - nesting
-    - conditional_binding_cascade
     - operator_whitespace
     - control_statement
     - legacy_constant
@@ -15,7 +14,6 @@ disabled_rules: # rule identifiers to exclude from running
     - closing_brace
     - statement_position
     - legacy_constructor
-    - valid_docs
     - missing_docs
     - leading_whitespace
     - function_parameter_count
@@ -44,9 +42,9 @@ opt_in_rules: # some rules are only opt-in
   - empty_string
   - modifier_order
   - toggle_bool
-  - unused_private_declaration
   - convenience_type
   - cyclomatic_complexity
+  - private_subject
   - todo
 
 included: # paths to include during linting. `--path` is ignored if present.
