@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		A50FAAC6272D92DB00ED593C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAAC5272D92DB00ED593C /* AppDelegate.swift */; };
 		A50FAAC8272D92DB00ED593C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAAC7272D92DB00ED593C /* SceneDelegate.swift */; };
-		A50FAACA272D92DB00ED593C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAAC9272D92DB00ED593C /* ViewController.swift */; };
-		A50FAACD272D92DB00ED593C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50FAACB272D92DB00ED593C /* Main.storyboard */; };
 		A50FAACF272D92DB00ED593C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50FAACE272D92DB00ED593C /* Assets.xcassets */; };
 		A50FAAD2272D92DB00ED593C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50FAAD0272D92DB00ED593C /* LaunchScreen.storyboard */; };
 		A50FAADD272D92DB00ED593C /* N_PlateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAADC272D92DB00ED593C /* N_PlateTests.swift */; };
 		A50FAAE8272D92DB00ED593C /* N_PlateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAAE7272D92DB00ED593C /* N_PlateUITests.swift */; };
+		A51A8C6E272DB3770073E892 /* SomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C6D272DB3770073E892 /* SomeViewController.swift */; };
+		A51A8C71272DB6B00073E892 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C70272DB6B00073E892 /* NiblessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 		A50FAAC2272D92DB00ED593C /* N-Plate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "N-Plate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50FAAC5272D92DB00ED593C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A50FAAC7272D92DB00ED593C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A50FAAC9272D92DB00ED593C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A50FAACC272D92DB00ED593C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A50FAACE272D92DB00ED593C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A50FAAD1272D92DB00ED593C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A50FAAD3272D92DB00ED593C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		A50FAAE3272D92DB00ED593C /* N-PlateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "N-PlateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50FAAE7272D92DB00ED593C /* N_PlateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N_PlateUITests.swift; sourceTree = "<group>"; };
 		A50FAAE9272D92DB00ED593C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A51A8C6D272DB3770073E892 /* SomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewController.swift; sourceTree = "<group>"; };
+		A51A8C70272DB6B00073E892 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +99,10 @@
 		A50FAAC4272D92DB00ED593C /* N-Plate */ = {
 			isa = PBXGroup;
 			children = (
-				A50FAAC5272D92DB00ED593C /* AppDelegate.swift */,
-				A50FAAC7272D92DB00ED593C /* SceneDelegate.swift */,
-				A50FAAC9272D92DB00ED593C /* ViewController.swift */,
-				A50FAACB272D92DB00ED593C /* Main.storyboard */,
-				A50FAACE272D92DB00ED593C /* Assets.xcassets */,
-				A50FAAD0272D92DB00ED593C /* LaunchScreen.storyboard */,
-				A50FAAD3272D92DB00ED593C /* Info.plist */,
+				A51A8C6F272DB68D0073E892 /* PlateUI */,
+				A51A8C6C272DB1160073E892 /* Application */,
+				A51A8C6B272DB10B0073E892 /* Supporting Files */,
+				A51A8C6D272DB3770073E892 /* SomeViewController.swift */,
 			);
 			path = "N-Plate";
 			sourceTree = "<group>";
@@ -128,6 +125,33 @@
 			path = "N-PlateUITests";
 			sourceTree = "<group>";
 		};
+		A51A8C6B272DB10B0073E892 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A50FAAD0272D92DB00ED593C /* LaunchScreen.storyboard */,
+				A50FAACE272D92DB00ED593C /* Assets.xcassets */,
+				A50FAAD3272D92DB00ED593C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A51A8C6C272DB1160073E892 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A50FAAC5272D92DB00ED593C /* AppDelegate.swift */,
+				A50FAAC7272D92DB00ED593C /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A51A8C6F272DB68D0073E892 /* PlateUI */ = {
+			isa = PBXGroup;
+			children = (
+				A51A8C70272DB6B00073E892 /* NiblessViewController.swift */,
+			);
+			path = PlateUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,8 +162,8 @@
 				A50FAABE272D92DB00ED593C /* Sources */,
 				A50FAABF272D92DB00ED593C /* Frameworks */,
 				A50FAAC0272D92DB00ED593C /* Resources */,
-				A5C5123F272DA49F000F5963 /* ShellScript */,
-				A5C51240272DA95E000F5963 /* ShellScript */,
+				A5C5123F272DA49F000F5963 /* SwiftLint */,
+				A5C51240272DA95E000F5963 /* Swiftformat */,
 			);
 			buildRules = (
 			);
@@ -235,7 +259,6 @@
 			files = (
 				A50FAAD2272D92DB00ED593C /* LaunchScreen.storyboard in Resources */,
 				A50FAACF272D92DB00ED593C /* Assets.xcassets in Resources */,
-				A50FAACD272D92DB00ED593C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +279,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A5C5123F272DA49F000F5963 /* ShellScript */ = {
+		A5C5123F272DA49F000F5963 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,6 +288,7 @@
 			);
 			inputPaths = (
 			);
+			name = SwiftLint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -273,7 +297,7 @@
 			shellPath = /bin/sh;
 			shellScript = "PATH=${PATH}:/opt/homebrew/bin\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
 		};
-		A5C51240272DA95E000F5963 /* ShellScript */ = {
+		A5C51240272DA95E000F5963 /* Swiftformat */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -282,6 +306,7 @@
 			);
 			inputPaths = (
 			);
+			name = Swiftformat;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -297,8 +322,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50FAACA272D92DB00ED593C /* ViewController.swift in Sources */,
 				A50FAAC6272D92DB00ED593C /* AppDelegate.swift in Sources */,
+				A51A8C71272DB6B00073E892 /* NiblessViewController.swift in Sources */,
+				A51A8C6E272DB3770073E892 /* SomeViewController.swift in Sources */,
 				A50FAAC8272D92DB00ED593C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,14 +361,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A50FAACB272D92DB00ED593C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A50FAACC272D92DB00ED593C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A50FAAD0272D92DB00ED593C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -476,7 +494,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "N-Plate/Info.plist";
+				INFOPLIST_FILE = "N-Plate/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -495,7 +513,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "N-Plate/Info.plist";
+				INFOPLIST_FILE = "N-Plate/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
