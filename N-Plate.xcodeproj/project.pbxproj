@@ -10,11 +10,10 @@
 		A50FAAC6272D92DB00ED593C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAAC5272D92DB00ED593C /* AppDelegate.swift */; };
 		A50FAACF272D92DB00ED593C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50FAACE272D92DB00ED593C /* Assets.xcassets */; };
 		A50FAAD2272D92DB00ED593C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50FAAD0272D92DB00ED593C /* LaunchScreen.storyboard */; };
-		A50FAADD272D92DB00ED593C /* N_PlateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAADC272D92DB00ED593C /* N_PlateTests.swift */; };
-		A50FAAE8272D92DB00ED593C /* N_PlateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAAE7272D92DB00ED593C /* N_PlateUITests.swift */; };
 		A51A8C6E272DB3770073E892 /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C6D272DB3770073E892 /* FirstTabViewController.swift */; };
 		A51A8C71272DB6B00073E892 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C70272DB6B00073E892 /* NiblessViewController.swift */; };
 		A53EF43E272F0B0D00673970 /* TabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53EF43D272F0B0D00673970 /* TabBarControllerTests.swift */; };
+		A53EF440272F21EC00673970 /* N_PlateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53EF43F272F21EB00673970 /* N_PlateUITests.swift */; };
 		A5D73717272E9C2D009CC3AC /* FirstTabCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D73716272E9C2D009CC3AC /* FirstTabCore.swift */; };
 		A5D73719272E9F06009CC3AC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D73718272E9F06009CC3AC /* TabBarController.swift */; };
 		A5D7371B272EA197009CC3AC /* TabBarCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7371A272EA197009CC3AC /* TabBarCore.swift */; };
@@ -45,14 +44,13 @@
 		A50FAAD1272D92DB00ED593C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A50FAAD3272D92DB00ED593C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50FAAD8272D92DB00ED593C /* N-PlateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "N-PlateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A50FAADC272D92DB00ED593C /* N_PlateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N_PlateTests.swift; sourceTree = "<group>"; };
 		A50FAADE272D92DB00ED593C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50FAAE3272D92DB00ED593C /* N-PlateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "N-PlateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A50FAAE7272D92DB00ED593C /* N_PlateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = N_PlateUITests.swift; sourceTree = "<group>"; };
 		A50FAAE9272D92DB00ED593C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A51A8C6D272DB3770073E892 /* FirstTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
 		A51A8C70272DB6B00073E892 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		A53EF43D272F0B0D00673970 /* TabBarControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerTests.swift; sourceTree = "<group>"; };
+		A53EF43F272F21EB00673970 /* N_PlateUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = N_PlateUITests.swift; sourceTree = "<group>"; };
 		A5D73716272E9C2D009CC3AC /* FirstTabCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabCore.swift; sourceTree = "<group>"; };
 		A5D73718272E9F06009CC3AC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A5D7371A272EA197009CC3AC /* TabBarCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCore.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				A53EF43C272F0ABB00673970 /* Presentation */,
-				A50FAADC272D92DB00ED593C /* N_PlateTests.swift */,
 				A50FAADE272D92DB00ED593C /* Info.plist */,
 			);
 			path = "N-PlateTests";
@@ -131,7 +128,7 @@
 		A50FAAE6272D92DB00ED593C /* N-PlateUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A50FAAE7272D92DB00ED593C /* N_PlateUITests.swift */,
+				A53EF43F272F21EB00673970 /* N_PlateUITests.swift */,
 				A50FAAE9272D92DB00ED593C /* Info.plist */,
 			);
 			path = "N-PlateUITests";
@@ -312,6 +309,7 @@
 					};
 					A50FAAE2272D92DB00ED593C = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = A50FAAC1272D92DB00ED593C;
 					};
 				};
@@ -420,7 +418,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50FAADD272D92DB00ED593C /* N_PlateTests.swift in Sources */,
 				A53EF43E272F0B0D00673970 /* TabBarControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,7 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50FAAE8272D92DB00ED593C /* N_PlateUITests.swift in Sources */,
+				A53EF440272F21EC00673970 /* N_PlateUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +657,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "N-PlateUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -669,6 +667,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nirma.N-PlateUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "N-Plate";
@@ -679,6 +678,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "N-PlateUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
