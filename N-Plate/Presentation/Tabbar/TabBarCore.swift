@@ -4,3 +4,7 @@
 //
 
 import Foundation
+
+protocol TabBarCoreType {}
+
+final class TabBarCore: TabBarCoreType {}
