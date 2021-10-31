@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   ) -> Bool {
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.rootViewController = UINavigationController(
-      rootViewController: SomeViewController(viewModel: SomeViewModel())
+      rootViewController: FirstTabViewController(core: FirstTabCore())
     )
     window?.makeKeyAndVisible()
     return true
