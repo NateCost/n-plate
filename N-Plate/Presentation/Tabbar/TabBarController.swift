@@ -12,7 +12,7 @@ enum ApplicationTab: Int, Equatable, CaseIterable {
 }
 
 final class TabBarController: UITabBarController {
-  let startIndex = ApplicationTab.secondTab
+  private var needSetup = true
   private let core: TabBarCoreType
 
   @available(*, unavailable)
@@ -20,8 +20,24 @@ final class TabBarController: UITabBarController {
       fatalError("Loading this view controller from a nib or storyboards is unsupported")
   }
 
-  init(core: TabBarCoreType) {
+  init(core: TabBarCoreType, startTab: ApplicationTab) {
     self.core = core
     super.init(nibName: nil, bundle: nil)
+  }
+
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    if needSetup {
+      setup()
+    }
+  }
+
+  private func setup() {
+    needSetup.toggle()
+
+    // tabBar.barTintColor = UIColor.white
+    // tabBar.tintColor = R.color.tab_bar_text_selected()!
+
+    viewControllers = [FirstTabViewController(core: FirstTabCore()), FirstTabViewController(core: FirstTabCore()), FirstTabViewController(core: FirstTabCore())]
   }
 }
