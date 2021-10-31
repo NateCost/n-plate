@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A50FAAC6272D92DB00ED593C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAAC5272D92DB00ED593C /* AppDelegate.swift */; };
-		A50FAAC8272D92DB00ED593C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAAC7272D92DB00ED593C /* SceneDelegate.swift */; };
 		A50FAACF272D92DB00ED593C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50FAACE272D92DB00ED593C /* Assets.xcassets */; };
 		A50FAAD2272D92DB00ED593C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50FAAD0272D92DB00ED593C /* LaunchScreen.storyboard */; };
 		A50FAADD272D92DB00ED593C /* N_PlateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAADC272D92DB00ED593C /* N_PlateTests.swift */; };
@@ -40,7 +39,6 @@
 /* Begin PBXFileReference section */
 		A50FAAC2272D92DB00ED593C /* N-Plate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "N-Plate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50FAAC5272D92DB00ED593C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A50FAAC7272D92DB00ED593C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A50FAACE272D92DB00ED593C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A50FAAD1272D92DB00ED593C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A50FAAD3272D92DB00ED593C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				A50FAAC5272D92DB00ED593C /* AppDelegate.swift */,
-				A50FAAC7272D92DB00ED593C /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -400,7 +397,6 @@
 				A5D73719272E9F06009CC3AC /* TabBarController.swift in Sources */,
 				A5D7371B272EA197009CC3AC /* TabBarCore.swift in Sources */,
 				A51A8C6E272DB3770073E892 /* FirstTabViewController.swift in Sources */,
-				A50FAAC8272D92DB00ED593C /* SceneDelegate.swift in Sources */,
 				A5D73717272E9C2D009CC3AC /* FirstTabCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
