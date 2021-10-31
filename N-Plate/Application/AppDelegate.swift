@@ -13,11 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-    window = UIWindow(frame: UIScreen.main.bounds)
-    window?.rootViewController = UINavigationController(
-      rootViewController: FirstTabViewController(core: FirstTabCore())
-    )
-    window?.makeKeyAndVisible()
+//    let tabbar = TabBarController(core: TabBarCore(), startTab: .firstTab)
+//
+//    window = UIWindow(frame: UIScreen.main.bounds)
+//    window?.rootViewController = FirstTabViewController(core: FirstTabCore())
+//    window?.makeKeyAndVisible()
+
     return true
   }
 

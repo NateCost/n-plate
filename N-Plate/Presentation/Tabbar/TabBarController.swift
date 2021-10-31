@@ -38,6 +38,10 @@ final class TabBarController: UITabBarController {
     // tabBar.barTintColor = UIColor.white
     // tabBar.tintColor = R.color.tab_bar_text_selected()!
 
-    viewControllers = [FirstTabViewController(core: FirstTabCore()), FirstTabViewController(core: FirstTabCore()), FirstTabViewController(core: FirstTabCore())]
+    viewControllers = [
+      FirstTabViewController(core: FirstTabCore()),
+      FirstTabViewController(core: FirstTabCore()),
+      FirstTabViewController(core: FirstTabCore())
+    ]
   }
 }
