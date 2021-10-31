@@ -8,6 +8,7 @@ import UIKit
 // swiftlint:disable line_length
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   var window: UIWindow?
+  static var shared: SceneDelegate? { UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate }
 
   func scene(
     _ scene: UIScene, willConnectTo session: UISceneSession,
@@ -48,5 +49,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // Called as the scene transitions from the foreground to the background.
     // Use this method to save data, release shared resources, and store enough scene-specific state information
     // to restore the scene back to its current state.
+  }
+
+  func changeRootViewControllerTo(_ viewController: UIViewController) {
+    let snapshot: UIView = (window?.snapshotView(afterScreenUpdates: true))!
+    viewController.view.addSubview(snapshot)
+
+    window?.rootViewController = viewController
+
+    UIView.animate(withDuration: 0.3, animations: { () in
+      snapshot.layer.opacity = 0
+      snapshot.layer.transform = CATransform3DMakeScale(1.5, 1.5, 1.5)
+    }, completion: { _ in
+      snapshot.removeFromSuperview()
+    })
   }
 }

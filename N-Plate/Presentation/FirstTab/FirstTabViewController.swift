@@ -12,4 +12,9 @@ final class FirstTabViewController: NiblessViewController {
     self.core = core
     super.init()
   }
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    view.backgroundColor = .lightGray
+  }
 }
