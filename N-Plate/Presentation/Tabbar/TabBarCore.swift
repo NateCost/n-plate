@@ -5,6 +5,10 @@
 
 import Foundation
 
-protocol TabBarCoreType {}
+protocol TabBarCoreType {
+  func setup()
+}
 
-final class TabBarCore: TabBarCoreType {}
+final class TabBarCore: TabBarCoreType {
+  func setup() {}
+}
