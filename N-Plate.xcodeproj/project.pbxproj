@@ -16,6 +16,8 @@
 		A51A8C6E272DB3770073E892 /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C6D272DB3770073E892 /* FirstTabViewController.swift */; };
 		A51A8C71272DB6B00073E892 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C70272DB6B00073E892 /* NiblessViewController.swift */; };
 		A5D73717272E9C2D009CC3AC /* FirstTabCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D73716272E9C2D009CC3AC /* FirstTabCore.swift */; };
+		A5D73719272E9F06009CC3AC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D73718272E9F06009CC3AC /* TabBarController.swift */; };
+		A5D7371B272EA197009CC3AC /* TabBarCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7371A272EA197009CC3AC /* TabBarCore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		A51A8C6D272DB3770073E892 /* FirstTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
 		A51A8C70272DB6B00073E892 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		A5D73716272E9C2D009CC3AC /* FirstTabCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabCore.swift; sourceTree = "<group>"; };
+		A5D73718272E9F06009CC3AC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A5D7371A272EA197009CC3AC /* TabBarCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,8 @@
 		A5D73712272E8620009CC3AC /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				A5D73718272E9F06009CC3AC /* TabBarController.swift */,
+				A5D7371A272EA197009CC3AC /* TabBarCore.swift */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -391,6 +397,8 @@
 			files = (
 				A50FAAC6272D92DB00ED593C /* AppDelegate.swift in Sources */,
 				A51A8C71272DB6B00073E892 /* NiblessViewController.swift in Sources */,
+				A5D73719272E9F06009CC3AC /* TabBarController.swift in Sources */,
+				A5D7371B272EA197009CC3AC /* TabBarCore.swift in Sources */,
 				A51A8C6E272DB3770073E892 /* FirstTabViewController.swift in Sources */,
 				A50FAAC8272D92DB00ED593C /* SceneDelegate.swift in Sources */,
 				A5D73717272E9C2D009CC3AC /* FirstTabCore.swift in Sources */,
