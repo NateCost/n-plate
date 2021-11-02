@@ -10,9 +10,13 @@ protocol TabBarCoreType {
 }
 
 extension TabBarCore: TabBarCoreType {
-  func viewWillAppear() {}
+  func viewWillAppear() {
+    setup()
+  }
 
-  private func setup() {}
+  private func setup() {
+    needSetup = false
+  }
 }
 
 class TabBarCore {

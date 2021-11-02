@@ -17,8 +17,8 @@ extension TabBarCoreTests {
 
   func test_setup_called_once() {
     let sut = makeSUT(initialTab: .firstTab)
-    XCTAssertTrue(sut.needSetup)
-    XCTAssertEqual(sut.currentTab, .firstTab)
+    sut.viewWillAppear()
+    XCTAssertFalse(sut.needSetup)
   }
 }
 
