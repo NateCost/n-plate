@@ -17,7 +17,7 @@ final class TabBarController: UITabBarController {
 
   @available(*, unavailable)
   public required init?(coder aDecoder: NSCoder) {
-      fatalError("Loading this view controller from a nib or storyboards is unsupported")
+    fatalError("Loading this view controller from a nib or storyboards is unsupported")
   }
 
   init(core: TabBarCoreType, startTab: ApplicationTab) {

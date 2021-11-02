@@ -9,6 +9,17 @@ protocol TabBarCoreType {
   func viewWillAppear()
 }
 
-final class TabBarCore: TabBarCoreType {
+extension TabBarCore: TabBarCoreType {
   func viewWillAppear() {}
+
+  private func setup() {}
+}
+
+class TabBarCore {
+  var needSetup = true
+  var currentTab: ApplicationTab
+
+  init(initialTab: ApplicationTab) {
+    currentTab = initialTab
+  }
 }

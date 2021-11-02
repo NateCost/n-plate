@@ -19,6 +19,7 @@
 		A5D7371B272EA197009CC3AC /* TabBarCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7371A272EA197009CC3AC /* TabBarCore.swift */; };
 		A5D7371D272EAC6D009CC3AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7371C272EAC6D009CC3AC /* SceneDelegate.swift */; };
 		F444EA782731B13A009B1097 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F444EA772731B13A009B1097 /* SnapKit */; };
+		F444EA7A2731B992009B1097 /* TabBarCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F444EA792731B992009B1097 /* TabBarCoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		A5D73718272E9F06009CC3AC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A5D7371A272EA197009CC3AC /* TabBarCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCore.swift; sourceTree = "<group>"; };
 		A5D7371C272EAC6D009CC3AC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F444EA792731B992009B1097 /* TabBarCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				A53EF43D272F0B0D00673970 /* TabBarControllerTests.swift */,
+				F444EA792731B992009B1097 /* TabBarCoreTests.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F444EA7A2731B992009B1097 /* TabBarCoreTests.swift in Sources */,
 				A53EF43E272F0B0D00673970 /* TabBarControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
