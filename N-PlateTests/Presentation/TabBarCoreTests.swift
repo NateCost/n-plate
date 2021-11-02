@@ -20,10 +20,32 @@ extension TabBarCoreTests {
     sut.viewWillAppear()
     XCTAssertFalse(sut.needSetup)
   }
+
+  func test_setup_called_twice() {
+    let sut = makeSUT(initialTab: .firstTab)
+    sut.viewWillAppear()
+    sut.viewWillAppear()
+    XCTAssertEqual(sut.setupCalledCount, 1)
+  }
 }
 
 class TabBarCoreTests: XCTestCase {
-  func makeSUT(initialTab: ApplicationTab) -> TabBarCore {
-    TabBarCore(initialTab: initialTab)
+  func makeSUT(initialTab: ApplicationTab) -> TabBarCoreSpy {
+    TabBarCoreSpy(initialTab: initialTab)
+  }
+}
+
+class TabBarCoreSpy: TabBarCore {
+  var setupCalledCount = 0
+  var setupCalled = false
+
+  override func viewWillAppear() {
+    super.viewWillAppear()
+    setupCalled = true
+  }
+
+  override func setup() {
+    super.setup()
+    setupCalledCount += 1
   }
 }
