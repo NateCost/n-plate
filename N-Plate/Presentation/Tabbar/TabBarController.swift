@@ -11,8 +11,26 @@ enum ApplicationTab: Int, Equatable, CaseIterable {
   case thirdTab
 }
 
+extension TabBarController {
+    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      core.viewWillAppear()
+      setup()
+    }
+
+    private func setup() {
+      // tabBar.barTintColor = UIColor.white
+      // tabBar.tintColor = R.color.tab_bar_text_selected()!
+
+      viewControllers = [
+        FirstTabViewController(core: FirstTabCore()),
+        FirstTabViewController(core: FirstTabCore()),
+        FirstTabViewController(core: FirstTabCore())
+      ]
+    }
+}
+
 final class TabBarController: UITabBarController {
-  private var needSetup = true
   private let core: TabBarCoreType
 
   @available(*, unavailable)
@@ -23,26 +41,5 @@ final class TabBarController: UITabBarController {
   init(core: TabBarCoreType, startTab: ApplicationTab) {
     self.core = core
     super.init(nibName: nil, bundle: nil)
-  }
-
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    if needSetup {
-      core.viewWillAppear()
-      setup()
-    }
-  }
-
-  private func setup() {
-    needSetup.toggle()
-
-    // tabBar.barTintColor = UIColor.white
-    // tabBar.tintColor = R.color.tab_bar_text_selected()!
-
-    viewControllers = [
-      FirstTabViewController(core: FirstTabCore()),
-      FirstTabViewController(core: FirstTabCore()),
-      FirstTabViewController(core: FirstTabCore())
-    ]
   }
 }
