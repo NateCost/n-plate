@@ -6,9 +6,9 @@
 import Foundation
 
 protocol TabBarCoreType {
-  func setup()
+  func viewWillAppear()
 }
 
 final class TabBarCore: TabBarCoreType {
-  func setup() {}
+  func viewWillAppear() {}
 }
