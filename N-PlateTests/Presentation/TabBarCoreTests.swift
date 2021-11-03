@@ -11,47 +11,41 @@ import Combine
 // MARK: - Instantiation
 extension TabBarCoreTests {
   func test_instantiation_1() {
-    let sut = makeSUT(initialTab: .firstTab)
-    var cancellables: Set<AnyCancellable> = []
-    var someValues: [Int] = []
+    let sut = makeSUT()
 
+    var captured: [Int] = []
     sut.currentTabIndex
-      .sink { value in
-        someValues.append(value)
-      }
+      .sink { captured.append($0) }
       .store(in: &cancellables)
 
     XCTAssertTrue(sut.needSetup)
     XCTAssertEqual(sut.currentTab.value, .firstTab)
-    XCTAssertEqual(someValues.last, 0)
+    XCTAssertEqual(captured.last, ApplicationTab.firstTab.rawValue)
   }
 
   func test_instantiation_2() {
     let sut = makeSUT(initialTab: .secondTab)
-    var cancellables: Set<AnyCancellable> = []
-    var someValues: [Int] = []
-
+    
+    var captured: [Int] = []
     sut.currentTabIndex
-      .sink { value in
-        someValues.append(value)
-      }
+      .sink { captured.append($0) }
       .store(in: &cancellables)
 
     XCTAssertTrue(sut.needSetup)
     XCTAssertEqual(sut.currentTab.value, .secondTab)
-    XCTAssertEqual(someValues.last, 1)
+    XCTAssertEqual(captured.last, ApplicationTab.secondTab.rawValue)
   }
 }
 // MARK: - Logics
 extension TabBarCoreTests {
   func test_setup_called_once() {
-    let sut = makeSUT(initialTab: .firstTab)
+    let sut = makeSUT()
     sut.viewWillAppear()
     XCTAssertFalse(sut.needSetup)
   }
 
   func test_setup_called_twice() {
-    let sut = makeSUT(initialTab: .firstTab)
+    let sut = makeSUT()
     sut.viewWillAppear()
     sut.viewWillAppear()
     XCTAssertEqual(sut.setupCalledCount, 1)
@@ -59,7 +53,9 @@ extension TabBarCoreTests {
 }
 // MARK: - TabBarCoreTests
 class TabBarCoreTests: XCTestCase {
-  func makeSUT(initialTab: ApplicationTab) -> TabBarCoreSpy {
+  var cancellables: Set<AnyCancellable> = []
+
+  func makeSUT(initialTab: ApplicationTab = .firstTab) -> TabBarCoreSpy {
     TabBarCoreSpy(initialTab: initialTab)
   }
 }
@@ -76,5 +72,9 @@ class TabBarCoreSpy: TabBarCore {
   override func setup() {
     super.setup()
     setupCalledCount += 1
+  }
+
+  override init(initialTab: ApplicationTab = .firstTab) {
+    super.init(initialTab: initialTab)
   }
 }
