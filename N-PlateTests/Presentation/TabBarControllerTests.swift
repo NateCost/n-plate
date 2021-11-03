@@ -19,7 +19,7 @@ extension TabBarControllerTests {
     let sutCore = TabBarCoreSpy(initialTab: .firstTab)
     let sut = makeSUT(core: sutCore, startTab: .firstTab)
 
-    XCTAssertEqual(sut.viewControllers?.count, 0)
+    XCTAssertEqual(sut.viewControllers?.count ?? 0, 0)
   }
 
   func test_controller_has_rightAmountOfTabs_2() {
@@ -29,6 +29,18 @@ extension TabBarControllerTests {
     sut.viewWillAppear(false)
 
     XCTAssertEqual(sut.viewControllers?.count, 3)
+  }
+}
+// MARK: - Logic
+extension TabBarControllerTests {
+  func test_controller_change_currentControllerIndex() {
+    let sutCore = TabBarCoreSpy(initialTab: .firstTab)
+    let sut = makeSUT(core: sutCore, startTab: .firstTab)
+    sut.viewWillAppear(false)
+
+    sutCore.currentTabIndex = 1
+
+    XCTAssertEqual(sut.selectedIndex, 1)
   }
 }
 
