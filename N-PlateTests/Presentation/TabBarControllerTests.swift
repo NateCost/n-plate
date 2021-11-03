@@ -5,6 +5,8 @@
 
 import XCTest
 import UIKit
+import SchedulerKit
+import SchedulerKitTestUtils
 @testable import N_Plate
 
 // MARK: - Instantiation
@@ -45,7 +47,9 @@ extension TabBarControllerTests {
 }
 
 class TabBarControllerTests: XCTestCase {
+  let scheduler: TestScheduler = .init()
+
   func makeSUT(core: TabBarCoreType, startTab: ApplicationTab) -> TabBarController {
-    TabBarController(core: core, startTab: startTab)
+    TabBarController(core: core, startTab: startTab, scheduler: scheduler.eraseToAnyScheduler())
   }
 }
