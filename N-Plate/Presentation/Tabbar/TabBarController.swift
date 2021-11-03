@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import Combine
 
 enum ApplicationTab: Int, Equatable, CaseIterable {
   case firstTab
@@ -12,26 +13,32 @@ enum ApplicationTab: Int, Equatable, CaseIterable {
 }
 
 extension TabBarController {
-    override func viewWillAppear(_ animated: Bool) {
-      super.viewWillAppear(animated)
-      core.viewWillAppear()
-      setup()
-    }
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    core.viewWillAppear()
+    setup()
+  }
 
-    private func setup() {
-      // tabBar.barTintColor = UIColor.white
-      // tabBar.tintColor = R.color.tab_bar_text_selected()!
+  private func setup() {
+    core.currentTabIndexPublisher
+      .receive(on: DispatchQueue.main)
+      .assign(to: \.selectedIndex, onWeak: self)
+      .store(in: &cancellables)
 
-      viewControllers = [
-        FirstTabViewController(core: FirstTabCore()),
-        FirstTabViewController(core: FirstTabCore()),
-        FirstTabViewController(core: FirstTabCore())
-      ]
-    }
+    // tabBar.barTintColor = UIColor.white
+    // tabBar.tintColor = R.color.tab_bar_text_selected()!
+
+    viewControllers = [
+      FirstTabViewController(core: FirstTabCore()),
+      FirstTabViewController(core: FirstTabCore()),
+      FirstTabViewController(core: FirstTabCore())
+    ]
+  }
 }
-
+// MARK: - TabBarController
 final class TabBarController: UITabBarController {
   private let core: TabBarCoreType
+  private var cancellables: Set<AnyCancellable> = []
 
   @available(*, unavailable)
   public required init?(coder aDecoder: NSCoder) {

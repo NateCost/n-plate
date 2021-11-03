@@ -4,9 +4,11 @@
 //
 
 import Foundation
+import Combine
 
 protocol TabBarCoreType {
   func viewWillAppear()
+  var currentTabIndexPublisher: Published<Int>.Publisher { get }
 }
 
 class TabBarCore: TabBarCoreType {
@@ -22,6 +24,9 @@ class TabBarCore: TabBarCoreType {
 
   var needSetup = true
   var currentTab: ApplicationTab
+  
+  @Published var currentTabIndex = 0
+  var currentTabIndexPublisher: Published<Int>.Publisher { $currentTabIndex }
 
   init(initialTab: ApplicationTab) {
     currentTab = initialTab
