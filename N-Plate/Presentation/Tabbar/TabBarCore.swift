@@ -6,9 +6,10 @@
 import Foundation
 import Combine
 
-protocol TabBarCoreType {
-  func viewWillAppear()
-  var currentTabIndex: CurrentValueSubject<Int, Never> { get }
+enum ApplicationTab: Int, Equatable, CaseIterable {
+  case firstTab
+  case secondTab
+  case thirdTab
 }
 
 class TabBarCore: TabBarCoreType {
@@ -25,7 +26,7 @@ class TabBarCore: TabBarCoreType {
   var needSetup = true
   var currentTab: ApplicationTab
 
-  private(set) var currentTabIndex = CurrentValueSubject<Int, Never>(0)
+  let currentTabIndex = CurrentValueSubject<Int, Never>(0)
 
   init(initialTab: ApplicationTab) {
     currentTab = initialTab

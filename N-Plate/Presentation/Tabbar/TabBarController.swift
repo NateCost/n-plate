@@ -7,12 +7,6 @@ import UIKit
 import Combine
 import SchedulerKit
 
-enum ApplicationTab: Int, Equatable, CaseIterable {
-  case firstTab
-  case secondTab
-  case thirdTab
-}
-
 extension TabBarController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
