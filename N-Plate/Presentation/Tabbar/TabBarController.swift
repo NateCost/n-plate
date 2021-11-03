@@ -16,15 +16,18 @@ extension TabBarController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     core.viewWillAppear()
-    setup()
+    setupBindings()
+    setupUI()
   }
 
-  private func setup() {
+  private func setupBindings() {
     core.currentTabIndexPublisher
       .receive(on: DispatchQueue.main)
       .assign(to: \.selectedIndex, onWeak: self)
       .store(in: &cancellables)
+  }
 
+  private func setupUI() {
     // tabBar.barTintColor = UIColor.white
     // tabBar.tintColor = R.color.tab_bar_text_selected()!
 

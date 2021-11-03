@@ -8,7 +8,7 @@ import Combine
 
 protocol TabBarCoreType {
   func viewWillAppear()
-  var currentTabIndexPublisher: Published<Int>.Publisher { get }
+  var currentTabIndexPublisher: CombinePublisher<Int> { get }
 }
 
 class TabBarCore: TabBarCoreType {
@@ -26,7 +26,7 @@ class TabBarCore: TabBarCoreType {
   var currentTab: ApplicationTab
   
   @Published var currentTabIndex = 0
-  var currentTabIndexPublisher: Published<Int>.Publisher { $currentTabIndex }
+  var currentTabIndexPublisher: CombinePublisher<Int> { $currentTabIndex }
 
   init(initialTab: ApplicationTab) {
     currentTab = initialTab
