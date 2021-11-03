@@ -14,6 +14,7 @@
 		A51A8C71272DB6B00073E892 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C70272DB6B00073E892 /* NiblessViewController.swift */; };
 		A53EF43E272F0B0D00673970 /* TabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53EF43D272F0B0D00673970 /* TabBarControllerTests.swift */; };
 		A53EF440272F21EC00673970 /* N_PlateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53EF43F272F21EB00673970 /* N_PlateUITests.swift */; };
+		A5C1E3282731ECC4004FE5DE /* Combine+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1E3272731ECC4004FE5DE /* Combine+Extensions.swift */; };
 		A5D73717272E9C2D009CC3AC /* FirstTabCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D73716272E9C2D009CC3AC /* FirstTabCore.swift */; };
 		A5D73719272E9F06009CC3AC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D73718272E9F06009CC3AC /* TabBarController.swift */; };
 		A5D7371B272EA197009CC3AC /* TabBarCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7371A272EA197009CC3AC /* TabBarCore.swift */; };
@@ -53,6 +54,7 @@
 		A51A8C70272DB6B00073E892 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		A53EF43D272F0B0D00673970 /* TabBarControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerTests.swift; sourceTree = "<group>"; };
 		A53EF43F272F21EB00673970 /* N_PlateUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = N_PlateUITests.swift; sourceTree = "<group>"; };
+		A5C1E3272731ECC4004FE5DE /* Combine+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+Extensions.swift"; sourceTree = "<group>"; };
 		A5D73716272E9C2D009CC3AC /* FirstTabCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabCore.swift; sourceTree = "<group>"; };
 		A5D73718272E9F06009CC3AC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A5D7371A272EA197009CC3AC /* TabBarCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCore.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		A51A8C6C272DB1160073E892 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				A5C1E3262731ECB0004FE5DE /* Extensions */,
 				A50FAAC5272D92DB00ED593C /* AppDelegate.swift */,
 				A5D7371C272EAC6D009CC3AC /* SceneDelegate.swift */,
 			);
@@ -172,6 +175,14 @@
 				F444EA792731B992009B1097 /* TabBarCoreTests.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A5C1E3262731ECB0004FE5DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5C1E3272731ECC4004FE5DE /* Combine+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A5D7370D272E850E009CC3AC /* Networking */ = {
@@ -418,6 +429,7 @@
 				A50FAAC6272D92DB00ED593C /* AppDelegate.swift in Sources */,
 				A5D7371D272EAC6D009CC3AC /* SceneDelegate.swift in Sources */,
 				A51A8C71272DB6B00073E892 /* NiblessViewController.swift in Sources */,
+				A5C1E3282731ECC4004FE5DE /* Combine+Extensions.swift in Sources */,
 				A5D73719272E9F06009CC3AC /* TabBarController.swift in Sources */,
 				A5D7371B272EA197009CC3AC /* TabBarCore.swift in Sources */,
 				A51A8C6E272DB3770073E892 /* FirstTabViewController.swift in Sources */,
