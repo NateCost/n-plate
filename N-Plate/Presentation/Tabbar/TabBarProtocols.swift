@@ -9,5 +9,5 @@ import SchedulerKit
 
 protocol TabBarCoreType {
   func viewWillAppear()
-  var currentTabIndex: CurrentValueSubject<Int, Never> { get }
+  var currentTabIndex: AnyPublisher<Int, Never> { get }
 }

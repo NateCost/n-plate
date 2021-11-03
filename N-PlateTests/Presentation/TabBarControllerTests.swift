@@ -40,7 +40,7 @@ extension TabBarControllerTests {
     let sut = makeSUT(core: sutCore, startTab: .firstTab)
     sut.viewWillAppear(false)
 
-    sutCore.currentTabIndex.send(1)
+    sutCore.currentTab.send(.secondTab)
 
     XCTAssertEqual(sut.selectedIndex, 1)
   }
@@ -50,7 +50,7 @@ extension TabBarControllerTests {
     let sut = makeSUT(core: sutCore, startTab: .firstTab)
     sut.viewWillAppear(false)
 
-    sutCore.currentTabIndex.send(2)
+    sutCore.currentTab.send(.thirdTab)
 
     XCTAssertEqual(sut.selectedIndex, 2)
   }

@@ -24,11 +24,11 @@ class TabBarCore: TabBarCoreType {
   }
 
   var needSetup = true
-  var currentTab: ApplicationTab
-
-  let currentTabIndex = CurrentValueSubject<Int, Never>(0)
+  let currentTab: CurrentValueSubject<ApplicationTab, Never>
+  lazy var currentTabIndex: AnyPublisher<Int, Never> = currentTab.map(\.rawValue).erased
+  private var cancellables: Set<AnyCancellable> = []
 
   init(initialTab: ApplicationTab) {
-    currentTab = initialTab
+    currentTab = CurrentValueSubject<ApplicationTab, Never>(initialTab)
   }
 }
