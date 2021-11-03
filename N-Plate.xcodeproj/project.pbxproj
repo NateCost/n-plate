@@ -12,6 +12,8 @@
 		A50FAAD2272D92DB00ED593C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50FAAD0272D92DB00ED593C /* LaunchScreen.storyboard */; };
 		A51A8C6E272DB3770073E892 /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C6D272DB3770073E892 /* FirstTabViewController.swift */; };
 		A51A8C71272DB6B00073E892 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C70272DB6B00073E892 /* NiblessViewController.swift */; };
+		A51E379427331FBF009E6C5E /* SchedulerKit in Frameworks */ = {isa = PBXBuildFile; productRef = A51E379327331FBF009E6C5E /* SchedulerKit */; };
+		A51E379627331FBF009E6C5E /* SchedulerKitTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = A51E379527331FBF009E6C5E /* SchedulerKitTestUtils */; };
 		A53EF43E272F0B0D00673970 /* TabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53EF43D272F0B0D00673970 /* TabBarControllerTests.swift */; };
 		A53EF440272F21EC00673970 /* N_PlateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53EF43F272F21EB00673970 /* N_PlateUITests.swift */; };
 		A5C1E3282731ECC4004FE5DE /* Combine+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1E3272731ECC4004FE5DE /* Combine+Extensions.swift */; };
@@ -68,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F444EA782731B13A009B1097 /* SnapKit in Frameworks */,
+				A51E379427331FBF009E6C5E /* SchedulerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51E379627331FBF009E6C5E /* SchedulerKitTestUtils in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +273,7 @@
 			name = "N-Plate";
 			packageProductDependencies = (
 				F444EA772731B13A009B1097 /* SnapKit */,
+				A51E379327331FBF009E6C5E /* SchedulerKit */,
 			);
 			productName = "N-Plate";
 			productReference = A50FAAC2272D92DB00ED593C /* N-Plate.app */;
@@ -288,6 +293,9 @@
 				A50FAADA272D92DB00ED593C /* PBXTargetDependency */,
 			);
 			name = "N-PlateTests";
+			packageProductDependencies = (
+				A51E379527331FBF009E6C5E /* SchedulerKitTestUtils */,
+			);
 			productName = "N-PlateTests";
 			productReference = A50FAAD8272D92DB00ED593C /* N-PlateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -344,6 +352,7 @@
 			mainGroup = A50FAAB9272D92DB00ED593C;
 			packageReferences = (
 				F444EA762731B13A009B1097 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A51E379227331FBF009E6C5E /* XCRemoteSwiftPackageReference "SchedulerKit" */,
 			);
 			productRefGroup = A50FAAC3272D92DB00ED593C /* Products */;
 			projectDirPath = "";
@@ -760,6 +769,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A51E379227331FBF009E6C5E /* XCRemoteSwiftPackageReference "SchedulerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scheduler-kit/SchedulerKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		F444EA762731B13A009B1097 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -771,6 +788,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A51E379327331FBF009E6C5E /* SchedulerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A51E379227331FBF009E6C5E /* XCRemoteSwiftPackageReference "SchedulerKit" */;
+			productName = SchedulerKit;
+		};
+		A51E379527331FBF009E6C5E /* SchedulerKitTestUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A51E379227331FBF009E6C5E /* XCRemoteSwiftPackageReference "SchedulerKit" */;
+			productName = SchedulerKitTestUtils;
+		};
 		F444EA772731B13A009B1097 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F444EA762731B13A009B1097 /* XCRemoteSwiftPackageReference "SnapKit" */;
