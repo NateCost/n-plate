@@ -35,14 +35,24 @@ extension TabBarControllerTests {
 }
 // MARK: - Logic
 extension TabBarControllerTests {
-  func test_controller_change_currentControllerIndex() {
+  func test_controller_change_currentControllerIndex_1() {
     let sutCore = TabBarCoreSpy(initialTab: .firstTab)
     let sut = makeSUT(core: sutCore, startTab: .firstTab)
     sut.viewWillAppear(false)
 
-    sutCore.currentTabIndex = 1
+    sutCore.currentTabIndex.send(1)
 
     XCTAssertEqual(sut.selectedIndex, 1)
+  }
+
+  func test_controller_change_currentControllerIndex_2() {
+    let sutCore = TabBarCoreSpy(initialTab: .firstTab)
+    let sut = makeSUT(core: sutCore, startTab: .firstTab)
+    sut.viewWillAppear(false)
+
+    sutCore.currentTabIndex.send(2)
+
+    XCTAssertEqual(sut.selectedIndex, 2)
   }
 }
 

@@ -22,7 +22,7 @@ extension TabBarController {
   }
 
   private func setupBindings() {
-    core.currentTabIndexPublisher
+    core.currentTabIndex
       .receive(on: scheduler)
       .assign(to: \.selectedIndex, onWeak: self)
       .store(in: &cancellables)

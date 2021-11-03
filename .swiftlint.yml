@@ -44,7 +44,6 @@ opt_in_rules: # some rules are only opt-in
   - toggle_bool
   - convenience_type
   - cyclomatic_complexity
-  - private_subject
   - todo
 
 included: # paths to include during linting. `--path` is ignored if present.

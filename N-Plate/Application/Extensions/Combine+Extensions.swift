@@ -21,5 +21,3 @@ extension Publisher {
     eraseToAnyPublisher()
   }
 }
-
-typealias CombinePublisher<T> = Published<T>.Publisher
