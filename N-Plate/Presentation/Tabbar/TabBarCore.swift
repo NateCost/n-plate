@@ -6,12 +6,6 @@
 import Foundation
 import Combine
 
-enum ApplicationTab: Int, Equatable, CaseIterable {
-  case firstTab
-  case secondTab
-  case thirdTab
-}
-
 class TabBarCore: TabBarCoreType {
   func viewWillAppear() {
     if needSetup {
