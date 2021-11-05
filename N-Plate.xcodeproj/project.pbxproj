@@ -182,11 +182,43 @@
 			path = PlateUI;
 			sourceTree = "<group>";
 		};
-		A53EF43C272F0ABB00673970 /* Presentation */ = {
+		A5374F8F27357E6F0001A7DD /* TabBarTests */ = {
 			isa = PBXGroup;
 			children = (
 				A53EF43D272F0B0D00673970 /* TabBarControllerTests.swift */,
 				F444EA792731B992009B1097 /* TabBarCoreTests.swift */,
+			);
+			path = TabBarTests;
+			sourceTree = "<group>";
+		};
+		A5374F9027357E7D0001A7DD /* FirstTabTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FirstTabTests;
+			sourceTree = "<group>";
+		};
+		A5374F9127357E870001A7DD /* SecondTabTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SecondTabTests;
+			sourceTree = "<group>";
+		};
+		A5374F9227357E8D0001A7DD /* ThirdTabTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdTabTests;
+			sourceTree = "<group>";
+		};
+		A53EF43C272F0ABB00673970 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A5374F9227357E8D0001A7DD /* ThirdTabTests */,
+				A5374F9127357E870001A7DD /* SecondTabTests */,
+				A5374F9027357E7D0001A7DD /* FirstTabTests */,
+				A5374F8F27357E6F0001A7DD /* TabBarTests */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
