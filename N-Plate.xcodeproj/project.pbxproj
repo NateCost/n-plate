@@ -15,6 +15,8 @@
 		A51E379427331FBF009E6C5E /* SchedulerKit in Frameworks */ = {isa = PBXBuildFile; productRef = A51E379327331FBF009E6C5E /* SchedulerKit */; };
 		A51E379627331FBF009E6C5E /* SchedulerKitTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = A51E379527331FBF009E6C5E /* SchedulerKitTestUtils */; };
 		A52904B4273328FA00C4EB4A /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52904B3273328FA00C4EB4A /* TabBarProtocols.swift */; };
+		A5374F8827357CED0001A7DD /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374F8727357CED0001A7DD /* SecondTabViewController.swift */; };
+		A5374F8A27357D120001A7DD /* SecondTabCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374F8927357D120001A7DD /* SecondTabCore.swift */; };
 		A53EF43E272F0B0D00673970 /* TabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53EF43D272F0B0D00673970 /* TabBarControllerTests.swift */; };
 		A53EF440272F21EC00673970 /* N_PlateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53EF43F272F21EB00673970 /* N_PlateUITests.swift */; };
 		A5C1E3282731ECC4004FE5DE /* Combine+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1E3272731ECC4004FE5DE /* Combine+Extensions.swift */; };
@@ -56,6 +58,8 @@
 		A51A8C6D272DB3770073E892 /* FirstTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
 		A51A8C70272DB6B00073E892 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		A52904B3273328FA00C4EB4A /* TabBarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
+		A5374F8727357CED0001A7DD /* SecondTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabViewController.swift; sourceTree = "<group>"; };
+		A5374F8927357D120001A7DD /* SecondTabCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabCore.swift; sourceTree = "<group>"; };
 		A53EF43D272F0B0D00673970 /* TabBarControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerTests.swift; sourceTree = "<group>"; };
 		A53EF43F272F21EB00673970 /* N_PlateUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = N_PlateUITests.swift; sourceTree = "<group>"; };
 		A5C1E3272731ECC4004FE5DE /* Combine+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+Extensions.swift"; sourceTree = "<group>"; };
@@ -245,6 +249,8 @@
 		A5D73714272E865E009CC3AC /* SecondTab */ = {
 			isa = PBXGroup;
 			children = (
+				A5374F8727357CED0001A7DD /* SecondTabViewController.swift */,
+				A5374F8927357D120001A7DD /* SecondTabCore.swift */,
 			);
 			path = SecondTab;
 			sourceTree = "<group>";
@@ -438,12 +444,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5374F8A27357D120001A7DD /* SecondTabCore.swift in Sources */,
 				A50FAAC6272D92DB00ED593C /* AppDelegate.swift in Sources */,
 				A5D7371D272EAC6D009CC3AC /* SceneDelegate.swift in Sources */,
 				A51A8C71272DB6B00073E892 /* NiblessViewController.swift in Sources */,
 				A5C1E3282731ECC4004FE5DE /* Combine+Extensions.swift in Sources */,
 				A5D73719272E9F06009CC3AC /* TabBarController.swift in Sources */,
 				A5D7371B272EA197009CC3AC /* TabBarCore.swift in Sources */,
+				A5374F8827357CED0001A7DD /* SecondTabViewController.swift in Sources */,
 				A51A8C6E272DB3770073E892 /* FirstTabViewController.swift in Sources */,
 				A52904B4273328FA00C4EB4A /* TabBarProtocols.swift in Sources */,
 				A5D73717272E9C2D009CC3AC /* FirstTabCore.swift in Sources */,
