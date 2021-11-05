@@ -23,13 +23,14 @@ extension TabBarController {
   }
 
   private func setupUI() {
-    // tabBar.barTintColor = UIColor.white
-    // tabBar.tintColor = R.color.tab_bar_text_selected()!
+    tabBar.backgroundColor = .brown
+    tabBar.barTintColor = UIColor.white
+    tabBar.tintColor = UIColor.black
 
     viewControllers = [
-      FirstTabViewController(core: FirstTabCore()),
-      FirstTabViewController(core: FirstTabCore()),
-      FirstTabViewController(core: FirstTabCore())
+      ApplicationTab.firstTab.getNavigationController(),
+      ApplicationTab.secondTab.getNavigationController(),
+      ApplicationTab.thirdTab.getNavigationController()
     ]
   }
 }
