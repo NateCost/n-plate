@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A50005F4273C349A00CA9C38 /* SimpleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50005F3273C349A00CA9C38 /* SimpleRequest.swift */; };
 		A50FAAC6272D92DB00ED593C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAAC5272D92DB00ED593C /* AppDelegate.swift */; };
 		A50FAACF272D92DB00ED593C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50FAACE272D92DB00ED593C /* Assets.xcassets */; };
 		A50FAAD2272D92DB00ED593C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50FAAD0272D92DB00ED593C /* LaunchScreen.storyboard */; };
@@ -22,6 +23,9 @@
 		A5374F96273584810001A7DD /* ApplicationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374F95273584810001A7DD /* ApplicationTab.swift */; };
 		A53EF43E272F0B0D00673970 /* TabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53EF43D272F0B0D00673970 /* TabBarControllerTests.swift */; };
 		A53EF440272F21EC00673970 /* N_PlateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53EF43F272F21EB00673970 /* N_PlateUITests.swift */; };
+		A553F30A273C274600753BAD /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553F309273C274600753BAD /* NetworkManagerTests.swift */; };
+		A553F30C273C291700753BAD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553F30B273C291700753BAD /* NetworkManager.swift */; };
+		A553F30E273C303000753BAD /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553F30D273C303000753BAD /* APIProvider.swift */; };
 		A5C1E3282731ECC4004FE5DE /* Combine+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1E3272731ECC4004FE5DE /* Combine+Extensions.swift */; };
 		A5D73717272E9C2D009CC3AC /* FirstTabCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D73716272E9C2D009CC3AC /* FirstTabCore.swift */; };
 		A5D73719272E9F06009CC3AC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D73718272E9F06009CC3AC /* TabBarController.swift */; };
@@ -49,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A50005F3273C349A00CA9C38 /* SimpleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRequest.swift; sourceTree = "<group>"; };
 		A50FAAC2272D92DB00ED593C /* N-Plate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "N-Plate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50FAAC5272D92DB00ED593C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A50FAACE272D92DB00ED593C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +73,9 @@
 		A5374F95273584810001A7DD /* ApplicationTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationTab.swift; sourceTree = "<group>"; };
 		A53EF43D272F0B0D00673970 /* TabBarControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerTests.swift; sourceTree = "<group>"; };
 		A53EF43F272F21EB00673970 /* N_PlateUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = N_PlateUITests.swift; sourceTree = "<group>"; };
+		A553F309273C274600753BAD /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		A553F30B273C291700753BAD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A553F30D273C303000753BAD /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		A5C1E3272731ECC4004FE5DE /* Combine+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+Extensions.swift"; sourceTree = "<group>"; };
 		A5D73716272E9C2D009CC3AC /* FirstTabCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabCore.swift; sourceTree = "<group>"; };
 		A5D73718272E9F06009CC3AC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -104,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A50005F2273C348F00CA9C38 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A50005F3273C349A00CA9C38 /* SimpleRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 		A50FAAB9272D92DB00ED593C = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +157,7 @@
 		A50FAADB272D92DB00ED593C /* N-PlateTests */ = {
 			isa = PBXGroup;
 			children = (
+				A553F308273C272B00753BAD /* Networking */,
 				A53EF43C272F0ABB00673970 /* Presentation */,
 				A50FAADE272D92DB00ED593C /* Info.plist */,
 			);
@@ -225,6 +242,14 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
+		A553F308273C272B00753BAD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A553F309273C274600753BAD /* NetworkManagerTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		A5C1E3262731ECB0004FE5DE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +261,9 @@
 		A5D7370D272E850E009CC3AC /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				A50005F2273C348F00CA9C38 /* Requests */,
+				A553F30B273C291700753BAD /* NetworkManager.swift */,
+				A553F30D273C303000753BAD /* APIProvider.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -486,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5374F8C27357D960001A7DD /* ThirdTabViewController.swift in Sources */,
+				A553F30E273C303000753BAD /* APIProvider.swift in Sources */,
 				A5374F8A27357D120001A7DD /* SecondTabCore.swift in Sources */,
 				A50FAAC6272D92DB00ED593C /* AppDelegate.swift in Sources */,
 				A5D7371D272EAC6D009CC3AC /* SceneDelegate.swift in Sources */,
@@ -497,6 +526,8 @@
 				A5374F8E27357DDC0001A7DD /* ThirdTabCore.swift in Sources */,
 				A51A8C6E272DB3770073E892 /* FirstTabViewController.swift in Sources */,
 				A52904B4273328FA00C4EB4A /* TabBarProtocols.swift in Sources */,
+				A50005F4273C349A00CA9C38 /* SimpleRequest.swift in Sources */,
+				A553F30C273C291700753BAD /* NetworkManager.swift in Sources */,
 				A5374F96273584810001A7DD /* ApplicationTab.swift in Sources */,
 				A5D73717272E9C2D009CC3AC /* FirstTabCore.swift in Sources */,
 			);
@@ -506,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A553F30A273C274600753BAD /* NetworkManagerTests.swift in Sources */,
 				F444EA7A2731B992009B1097 /* TabBarCoreTests.swift in Sources */,
 				A53EF43E272F0B0D00673970 /* TabBarControllerTests.swift in Sources */,
 			);
