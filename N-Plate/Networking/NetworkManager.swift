@@ -5,14 +5,17 @@
 
 import Foundation
 
-class NetworkManager {
-  private let apiProvider: APIProvider
+class NetworkManager<DataProvider: APIProvider> {
+  private let apiProvider: DataProvider
 
-  init(apiProvider: APIProvider) {
+  init(apiProvider: DataProvider) {
     self.apiProvider = apiProvider
   }
 
-  func execute(request: RequestType, completion: @escaping (Result<Data, Error>) -> Void) {
+  func execute(
+    request: RequestType,
+    completion: @escaping (Result<Data, DataProvider.ErrorType>) -> Void
+  ) {
     apiProvider.execute(request, completion: completion)
   }
 }

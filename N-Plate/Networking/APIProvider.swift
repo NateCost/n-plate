@@ -6,11 +6,12 @@
 import Foundation
 
 protocol APIProvider {
-  func execute(_ request: RequestType, completion: @escaping (Result<Data, Error>) -> Void)
+  associatedtype ErrorType: Error
+  func execute(_ request: RequestType, completion: @escaping (Result<Data, ErrorType>) -> Void)
 }
 
 class NetworkAPIProvider: APIProvider {
-  func execute(_ request: RequestType, completion: @escaping (Result<Data, Error>) -> Void) {
+  func execute(_ request: RequestType, completion: @escaping (Result<Data, NetworkError>) -> Void) {
     completion(.success(Data()))
   }
 }

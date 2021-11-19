@@ -9,7 +9,7 @@ import XCTest
 // MARK: - Instantiation
 extension NetworkManagerTests {
   func test_execute_request_calls_execute() {
-    let sut = makeSUT()
+    let sut = makeSUT(apiProvider: NetworkAPIProvider())
     let testRequest = NetworkRequestSpy()
     var completed = false
 
@@ -22,7 +22,9 @@ extension NetworkManagerTests {
 }
 
 class NetworkManagerTests: XCTestCase {
-  func makeSUT(apiProvider: APIProvider = NetworkAPIProvider()) -> NetworkManager {
+  func makeSUT<SomeAPIProvider: APIProvider>(
+    apiProvider: SomeAPIProvider
+  ) -> NetworkManager<SomeAPIProvider> {
     NetworkManager(apiProvider: apiProvider)
   }
 }
