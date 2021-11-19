@@ -27,8 +27,4 @@ class NetworkManagerTests: XCTestCase {
   }
 }
 
-private class NetworkRequestSpy: RequestType {
-  func execute(completion: @escaping (Result<Data, Error>) -> Void) {
-    completion(.success(Data()))
-  }
-}
+private class NetworkRequestSpy: RequestType {}

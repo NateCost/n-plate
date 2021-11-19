@@ -5,16 +5,10 @@
 
 import Foundation
 
-protocol RequestType {
-  func execute(completion: @escaping (Result<Data, Error>) -> Void)
-}
+protocol RequestType {}
 
-class SimpleNetworkRequest: RequestType {
-  func execute(completion: @escaping (Result<Data, Error>) -> Void) {
-    completion(.failure(NetworkError.connection))
-  }
-}
+class SimpleNetworkRequest: RequestType {}
 
-enum NetworkError: Error {
-  case connection
+enum NetworkError: Error, Equatable {
+  case connectionError
 }
