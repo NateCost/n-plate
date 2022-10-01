@@ -20,27 +20,16 @@ extension NetworkManagerTests {
     XCTAssertTrue(completed)
   }
 
-  func test_execute_request_success_1() {
-    let sut = makeSUT(apiProvider: NetworkAPIProvider())
-    var testResult: Result<Data, NetworkError> = .failure(.connectionError)
-
-    sut.execute(request: NetworkRequestSpy()) { result in
-      testResult = result
-    }
-
-    XCTAssertEqual(testResult, .success(Data()))
-  }
-
-  func test_execute_request_success_2() {
-      let result = Data(base64Encoded: "2121")
+  func test_execute_request_executes_apiCompletion() {
+      let result1 = Data(base64Encoded: "2121")!
       let sut = makeSUT(apiProvider: NetworkAPIProvider())
       var testResult: Result<Data, NetworkError> = .failure(.connectionError)
 
-      sut.execute(request: NetworkRequestSpy()) { result in
-        testResult = result
+      sut.execute(request: NetworkRequestSpy()) { _ in
+        testResult = .success(result1)
       }
 
-      XCTAssertEqual(testResult, .success(try XCTUnwrap(result)))
+      XCTAssertEqual(testResult, .success(try XCTUnwrap(result1)))
   }
 }
 
@@ -51,5 +40,5 @@ class NetworkManagerTests: XCTestCase {
     NetworkManager(apiProvider: apiProvider)
   }
 }
-
+// MARK: - NetworkRequestSpy
 private class NetworkRequestSpy: RequestType {}
