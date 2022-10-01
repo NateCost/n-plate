@@ -33,6 +33,7 @@
 		A5D7371D272EAC6D009CC3AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7371C272EAC6D009CC3AC /* SceneDelegate.swift */; };
 		F444EA782731B13A009B1097 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F444EA772731B13A009B1097 /* SnapKit */; };
 		F444EA7A2731B992009B1097 /* TabBarCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F444EA792731B992009B1097 /* TabBarCoreTests.swift */; };
+		F4C9F8A528E8DC0C0065D497 /* OffersTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F8A428E8DC0C0065D497 /* OffersTabTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		A5D7371A272EA197009CC3AC /* TabBarCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCore.swift; sourceTree = "<group>"; };
 		A5D7371C272EAC6D009CC3AC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F444EA792731B992009B1097 /* TabBarCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoreTests.swift; sourceTree = "<group>"; };
+		F4C9F8A428E8DC0C0065D497 /* OffersTabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersTabTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,19 +226,20 @@
 			path = SecondTabTests;
 			sourceTree = "<group>";
 		};
-		A5374F9227357E8D0001A7DD /* ThirdTabTests */ = {
+		A5374F9227357E8D0001A7DD /* OffersTab */ = {
 			isa = PBXGroup;
 			children = (
+				F4C9F8A428E8DC0C0065D497 /* OffersTabTests.swift */,
 			);
-			path = ThirdTabTests;
+			path = OffersTab;
 			sourceTree = "<group>";
 		};
 		A53EF43C272F0ABB00673970 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				A5374F9227357E8D0001A7DD /* ThirdTabTests */,
-				A5374F9127357E870001A7DD /* SecondTabTests */,
 				A5374F9027357E7D0001A7DD /* FirstTabTests */,
+				A5374F9127357E870001A7DD /* SecondTabTests */,
+				A5374F9227357E8D0001A7DD /* OffersTab */,
 				A5374F8F27357E6F0001A7DD /* TabBarTests */,
 			);
 			path = Presentation;
@@ -540,6 +543,7 @@
 				A553F30A273C274600753BAD /* NetworkManagerTests.swift in Sources */,
 				F444EA7A2731B992009B1097 /* TabBarCoreTests.swift in Sources */,
 				A53EF43E272F0B0D00673970 /* TabBarControllerTests.swift in Sources */,
+				F4C9F8A528E8DC0C0065D497 /* OffersTabTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
