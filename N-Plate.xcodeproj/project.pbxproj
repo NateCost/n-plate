@@ -34,6 +34,7 @@
 		F444EA782731B13A009B1097 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F444EA772731B13A009B1097 /* SnapKit */; };
 		F444EA7A2731B992009B1097 /* TabBarCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F444EA792731B992009B1097 /* TabBarCoreTests.swift */; };
 		F4C9F8A528E8DC0C0065D497 /* OffersTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F8A428E8DC0C0065D497 /* OffersTabTests.swift */; };
+		F4ECA96228E9992200525D64 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECA96128E9992200525D64 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		A5D7371C272EAC6D009CC3AC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F444EA792731B992009B1097 /* TabBarCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoreTests.swift; sourceTree = "<group>"; };
 		F4C9F8A428E8DC0C0065D497 /* OffersTabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OffersTabTests.swift; path = "N-PlateTests/Presentation/OffersTabTests.swift"; sourceTree = SOURCE_ROOT; };
+		F4ECA96128E9992200525D64 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "N-Plate/Data/User.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +150,8 @@
 				A51A8C6C272DB1160073E892 /* Application */,
 				A5D73711272E85D3009CC3AC /* Navigation */,
 				A5D73710272E8584009CC3AC /* Presentation */,
-				A5D7370E272E854F009CC3AC /* Data */,
 				A5D7370D272E850E009CC3AC /* Networking */,
+				F4ECA96328E9997E00525D64 /* Data */,
 				A51A8C6F272DB68D0073E892 /* PlateUI */,
 				A51A8C6B272DB10B0073E892 /* Supporting Files */,
 			);
@@ -247,13 +249,6 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		A5D7370E272E854F009CC3AC /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		A5D73710272E8584009CC3AC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +311,14 @@
 				F4C9F8A428E8DC0C0065D497 /* OffersTabTests.swift */,
 			);
 			name = Offers;
+			sourceTree = "<group>";
+		};
+		F4ECA96328E9997E00525D64 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECA96128E9992200525D64 /* User.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +519,7 @@
 				A51A8C6E272DB3770073E892 /* FirstTabViewController.swift in Sources */,
 				A52904B4273328FA00C4EB4A /* TabBarProtocols.swift in Sources */,
 				A50005F4273C349A00CA9C38 /* SimpleRequest.swift in Sources */,
+				F4ECA96228E9992200525D64 /* User.swift in Sources */,
 				A553F30C273C291700753BAD /* NetworkManager.swift in Sources */,
 				A5374F96273584810001A7DD /* ApplicationTab.swift in Sources */,
 				A5D73717272E9C2D009CC3AC /* FirstTabCore.swift in Sources */,
