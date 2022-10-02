@@ -6,4 +6,4 @@
 import XCTest
 @testable import N_Plate
 
-class OffersTabTests: XCTestCase {}
+class OffersTests: XCTestCase {}

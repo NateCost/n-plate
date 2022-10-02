@@ -17,7 +17,7 @@ enum ApplicationTab: Int, Equatable, CaseIterable {
     case .secondTab:
       return SecondTabViewController(core: SecondTabCore())
     case .thirdTab:
-      return ThirdTabViewController(core: ThirdTabCore())
+      return OffersViewController(core: OffersCore())
     }
   }
 
