@@ -17,20 +17,20 @@ extension TabBarControllerTests {
     XCTAssertTrue(sutCore.setupCalled)
   }
 
-  func test_controller_has_rightAmountOfTabs_1() {
+  func test_controller_has_noTabs_beforeSetup() {
     let sutCore = TabBarCoreSpy()
     let sut = makeSUT(core: sutCore)
 
-    XCTAssertEqual(sut.viewControllers?.count ?? 0, 0)
+    XCTAssertEqual(sut.viewControllers, nil)
   }
 
-  func test_controller_has_rightAmountOfTabs_2() {
+  func test_controller_has_rightAmountOfTabs_afterSetup() {
     let sutCore = TabBarCoreSpy()
     let sut = makeSUT(core: sutCore)
 
     sut.viewWillAppear(false)
 
-    XCTAssertEqual(sut.viewControllers?.count, 3)
+    XCTAssertEqual(sut.viewControllers!.count, 3)
   }
 }
 // MARK: - Logic
