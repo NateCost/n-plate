@@ -253,7 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				A5D73712272E8620009CC3AC /* Tabbar */,
-				A5D73713272E8658009CC3AC /* FirstTab */,
+				A5D73713272E8658009CC3AC /* Agreements */,
 				A5D73714272E865E009CC3AC /* SecondTab */,
 				A5D73715272E8664009CC3AC /* Offers */,
 			);
@@ -278,13 +278,13 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
-		A5D73713272E8658009CC3AC /* FirstTab */ = {
+		A5D73713272E8658009CC3AC /* Agreements */ = {
 			isa = PBXGroup;
 			children = (
 				A51A8C6D272DB3770073E892 /* FirstTabViewController.swift */,
 				A5D73716272E9C2D009CC3AC /* FirstTabCore.swift */,
 			);
-			path = FirstTab;
+			path = Agreements;
 			sourceTree = "<group>";
 		};
 		A5D73714272E865E009CC3AC /* SecondTab */ = {

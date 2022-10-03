@@ -13,7 +13,7 @@ enum ApplicationTab: Int, Equatable, CaseIterable {
   func getViewController() -> UIViewController {
     switch self {
     case .firstTab:
-      return FirstTabViewController(core: FirstTabCore())
+      return AgreementsViewController(core: AgreementsCore())
     case .secondTab:
       return SecondTabViewController(core: SecondTabCore())
     case .thirdTab:
