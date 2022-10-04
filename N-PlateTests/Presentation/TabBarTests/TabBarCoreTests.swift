@@ -19,8 +19,8 @@ extension TabBarCoreTests {
       .store(in: &cancellables)
 
     XCTAssertTrue(sut.needSetup)
-    XCTAssertEqual(sut.currentTab.value, .firstTab)
-    XCTAssertEqual(captured.last, ApplicationTab.firstTab.rawValue)
+    XCTAssertEqual(sut.currentTab.value, .agreementsTab)
+    XCTAssertEqual(captured.last, ApplicationTab.agreementsTab.rawValue)
   }
 
   func test_instantiation_2() {
@@ -55,7 +55,7 @@ extension TabBarCoreTests {
 class TabBarCoreTests: XCTestCase {
   var cancellables: Set<AnyCancellable> = []
 
-  func makeSUT(initialTab: ApplicationTab = .firstTab) -> TabBarCoreSpy {
+  func makeSUT(initialTab: ApplicationTab = .agreementsTab) -> TabBarCoreSpy {
     TabBarCoreSpy(initialTab: initialTab)
   }
 }
@@ -74,7 +74,7 @@ class TabBarCoreSpy: TabBarCore {
     setupCalledCount += 1
   }
 
-  override init(initialTab: ApplicationTab = .firstTab) {
+  override init(initialTab: ApplicationTab = .agreementsTab) {
     super.init(initialTab: initialTab)
   }
 }

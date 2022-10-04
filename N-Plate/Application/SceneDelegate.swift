@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     window = UIWindow(frame: windowScene.coordinateSpace.bounds)
     window?.windowScene = windowScene
     window?.makeKeyAndVisible()
-    let tabbar = TabBarController(core: TabBarCore(initialTab: .firstTab), startTab: .firstTab)
+    let tabbar = TabBarController(core: TabBarCore(initialTab: .agreementsTab), startTab: .agreementsTab)
     window?.rootViewController = tabbar
   }
 

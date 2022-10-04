@@ -28,7 +28,7 @@ extension TabBarController {
     tabBar.tintColor = UIColor.black
 
     viewControllers = [
-      ApplicationTab.firstTab.getNavigationController(),
+      ApplicationTab.agreementsTab.getNavigationController(),
       ApplicationTab.secondTab.getNavigationController(),
       ApplicationTab.thirdTab.getNavigationController()
     ]

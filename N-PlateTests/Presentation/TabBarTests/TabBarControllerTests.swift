@@ -59,7 +59,7 @@ extension TabBarControllerTests {
 class TabBarControllerTests: XCTestCase {
   let scheduler: TestScheduler = .init()
 
-  func makeSUT(core: TabBarCoreType, startTab: ApplicationTab = .firstTab) -> TabBarController {
+  func makeSUT(core: TabBarCoreType, startTab: ApplicationTab = .agreementsTab) -> TabBarController {
     TabBarController(core: core, startTab: startTab, scheduler: scheduler.eraseToAnyScheduler())
   }
 }

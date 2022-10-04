@@ -6,13 +6,13 @@
 import UIKit
 
 enum ApplicationTab: Int, Equatable, CaseIterable {
-  case firstTab
+  case agreementsTab
   case secondTab
   case thirdTab
 
   func getViewController() -> UIViewController {
     switch self {
-    case .firstTab:
+    case .agreementsTab:
       return AgreementsViewController(core: AgreementsCore())
     case .secondTab:
       return SecondTabViewController(core: SecondTabCore())
