@@ -50,9 +50,9 @@ extension TabBarControllerTests {
     let sut = makeSUT(core: sutCore)
     sut.viewWillAppear(false)
 
-    sutCore.currentTab.send(.thirdTab)
+    sutCore.currentTab.send(.offersTab)
 
-    XCTAssertEqual(sut.selectedIndex, ApplicationTab.thirdTab.rawValue)
+    XCTAssertEqual(sut.selectedIndex, ApplicationTab.offersTab.rawValue)
   }
 }
 

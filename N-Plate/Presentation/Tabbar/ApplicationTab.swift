@@ -8,7 +8,7 @@ import UIKit
 enum ApplicationTab: Int, Equatable, CaseIterable {
   case agreementsTab
   case secondTab
-  case thirdTab
+  case offersTab
 
   func getViewController() -> UIViewController {
     switch self {
@@ -16,7 +16,7 @@ enum ApplicationTab: Int, Equatable, CaseIterable {
       return AgreementsViewController(core: AgreementsCore())
     case .secondTab:
       return SecondTabViewController(core: SecondTabCore())
-    case .thirdTab:
+    case .offersTab:
       return OffersViewController(core: OffersCore())
     }
   }

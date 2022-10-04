@@ -30,7 +30,7 @@ extension TabBarController {
     viewControllers = [
       ApplicationTab.agreementsTab.getNavigationController(),
       ApplicationTab.secondTab.getNavigationController(),
-      ApplicationTab.thirdTab.getNavigationController()
+      ApplicationTab.offersTab.getNavigationController()
     ]
   }
 }
