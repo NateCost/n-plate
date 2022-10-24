@@ -19,7 +19,7 @@
 		A5374F8827357CED0001A7DD /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374F8727357CED0001A7DD /* SecondTabViewController.swift */; };
 		A5374F8A27357D120001A7DD /* SecondTabCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374F8927357D120001A7DD /* SecondTabCore.swift */; };
 		A5374F8C27357D960001A7DD /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374F8B27357D960001A7DD /* OffersViewController.swift */; };
-		A5374F8E27357DDC0001A7DD /* ThirdTabCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374F8D27357DDC0001A7DD /* ThirdTabCore.swift */; };
+		A5374F8E27357DDC0001A7DD /* OffersCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374F8D27357DDC0001A7DD /* OffersCore.swift */; };
 		A5374F96273584810001A7DD /* ApplicationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374F95273584810001A7DD /* ApplicationTab.swift */; };
 		A53EF43E272F0B0D00673970 /* TabBarControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53EF43D272F0B0D00673970 /* TabBarControllerTests.swift */; };
 		A53EF440272F21EC00673970 /* N_PlateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53EF43F272F21EB00673970 /* N_PlateUITests.swift */; };
@@ -71,7 +71,7 @@
 		A5374F8727357CED0001A7DD /* SecondTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabViewController.swift; sourceTree = "<group>"; };
 		A5374F8927357D120001A7DD /* SecondTabCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabCore.swift; sourceTree = "<group>"; };
 		A5374F8B27357D960001A7DD /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
-		A5374F8D27357DDC0001A7DD /* ThirdTabCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTabCore.swift; sourceTree = "<group>"; };
+		A5374F8D27357DDC0001A7DD /* OffersCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCore.swift; sourceTree = "<group>"; };
 		A5374F95273584810001A7DD /* ApplicationTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationTab.swift; sourceTree = "<group>"; };
 		A53EF43D272F0B0D00673970 /* TabBarControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerTests.swift; sourceTree = "<group>"; };
 		A53EF43F272F21EB00673970 /* N_PlateUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = N_PlateUITests.swift; sourceTree = "<group>"; };
@@ -300,7 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				A5374F8B27357D960001A7DD /* OffersViewController.swift */,
-				A5374F8D27357DDC0001A7DD /* ThirdTabCore.swift */,
+				A5374F8D27357DDC0001A7DD /* OffersCore.swift */,
 			);
 			path = Offers;
 			sourceTree = "<group>";
@@ -515,7 +515,7 @@
 				A5D73719272E9F06009CC3AC /* TabBarController.swift in Sources */,
 				A5D7371B272EA197009CC3AC /* TabBarCore.swift in Sources */,
 				A5374F8827357CED0001A7DD /* SecondTabViewController.swift in Sources */,
-				A5374F8E27357DDC0001A7DD /* ThirdTabCore.swift in Sources */,
+				A5374F8E27357DDC0001A7DD /* OffersCore.swift in Sources */,
 				A51A8C6E272DB3770073E892 /* AgreementsViewController.swift in Sources */,
 				A52904B4273328FA00C4EB4A /* TabBarProtocols.swift in Sources */,
 				A50005F4273C349A00CA9C38 /* SimpleRequest.swift in Sources */,
