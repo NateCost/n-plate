@@ -11,7 +11,7 @@
 		A50FAAC6272D92DB00ED593C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAAC5272D92DB00ED593C /* AppDelegate.swift */; };
 		A50FAACF272D92DB00ED593C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50FAACE272D92DB00ED593C /* Assets.xcassets */; };
 		A50FAAD2272D92DB00ED593C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50FAAD0272D92DB00ED593C /* LaunchScreen.storyboard */; };
-		A51A8C6E272DB3770073E892 /* FirstTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C6D272DB3770073E892 /* FirstTabViewController.swift */; };
+		A51A8C6E272DB3770073E892 /* AgreementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C6D272DB3770073E892 /* AgreementsViewController.swift */; };
 		A51A8C71272DB6B00073E892 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C70272DB6B00073E892 /* NiblessViewController.swift */; };
 		A51E379427331FBF009E6C5E /* SchedulerKit in Frameworks */ = {isa = PBXBuildFile; productRef = A51E379327331FBF009E6C5E /* SchedulerKit */; };
 		A51E379627331FBF009E6C5E /* SchedulerKitTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = A51E379527331FBF009E6C5E /* SchedulerKitTestUtils */; };
@@ -27,7 +27,7 @@
 		A553F30C273C291700753BAD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553F30B273C291700753BAD /* NetworkManager.swift */; };
 		A553F30E273C303000753BAD /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553F30D273C303000753BAD /* APIProvider.swift */; };
 		A5C1E3282731ECC4004FE5DE /* Combine+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1E3272731ECC4004FE5DE /* Combine+Extensions.swift */; };
-		A5D73717272E9C2D009CC3AC /* FirstTabCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D73716272E9C2D009CC3AC /* FirstTabCore.swift */; };
+		A5D73717272E9C2D009CC3AC /* AgreementsCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D73716272E9C2D009CC3AC /* AgreementsCore.swift */; };
 		A5D73719272E9F06009CC3AC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D73718272E9F06009CC3AC /* TabBarController.swift */; };
 		A5D7371B272EA197009CC3AC /* TabBarCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7371A272EA197009CC3AC /* TabBarCore.swift */; };
 		A5D7371D272EAC6D009CC3AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7371C272EAC6D009CC3AC /* SceneDelegate.swift */; };
@@ -65,7 +65,7 @@
 		A50FAADE272D92DB00ED593C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50FAAE3272D92DB00ED593C /* N-PlateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "N-PlateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50FAAE9272D92DB00ED593C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A51A8C6D272DB3770073E892 /* FirstTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabViewController.swift; sourceTree = "<group>"; };
+		A51A8C6D272DB3770073E892 /* AgreementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementsViewController.swift; sourceTree = "<group>"; };
 		A51A8C70272DB6B00073E892 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		A52904B3273328FA00C4EB4A /* TabBarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
 		A5374F8727357CED0001A7DD /* SecondTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		A553F30B273C291700753BAD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A553F30D273C303000753BAD /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		A5C1E3272731ECC4004FE5DE /* Combine+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+Extensions.swift"; sourceTree = "<group>"; };
-		A5D73716272E9C2D009CC3AC /* FirstTabCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabCore.swift; sourceTree = "<group>"; };
+		A5D73716272E9C2D009CC3AC /* AgreementsCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementsCore.swift; sourceTree = "<group>"; };
 		A5D73718272E9F06009CC3AC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A5D7371A272EA197009CC3AC /* TabBarCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCore.swift; sourceTree = "<group>"; };
 		A5D7371C272EAC6D009CC3AC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -281,8 +281,8 @@
 		A5D73713272E8658009CC3AC /* Agreements */ = {
 			isa = PBXGroup;
 			children = (
-				A51A8C6D272DB3770073E892 /* FirstTabViewController.swift */,
-				A5D73716272E9C2D009CC3AC /* FirstTabCore.swift */,
+				A51A8C6D272DB3770073E892 /* AgreementsViewController.swift */,
+				A5D73716272E9C2D009CC3AC /* AgreementsCore.swift */,
 			);
 			path = Agreements;
 			sourceTree = "<group>";
@@ -516,13 +516,13 @@
 				A5D7371B272EA197009CC3AC /* TabBarCore.swift in Sources */,
 				A5374F8827357CED0001A7DD /* SecondTabViewController.swift in Sources */,
 				A5374F8E27357DDC0001A7DD /* ThirdTabCore.swift in Sources */,
-				A51A8C6E272DB3770073E892 /* FirstTabViewController.swift in Sources */,
+				A51A8C6E272DB3770073E892 /* AgreementsViewController.swift in Sources */,
 				A52904B4273328FA00C4EB4A /* TabBarProtocols.swift in Sources */,
 				A50005F4273C349A00CA9C38 /* SimpleRequest.swift in Sources */,
 				F4ECA96228E9992200525D64 /* User.swift in Sources */,
 				A553F30C273C291700753BAD /* NetworkManager.swift in Sources */,
 				A5374F96273584810001A7DD /* ApplicationTab.swift in Sources */,
-				A5D73717272E9C2D009CC3AC /* FirstTabCore.swift in Sources */,
+				A5D73717272E9C2D009CC3AC /* AgreementsCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
