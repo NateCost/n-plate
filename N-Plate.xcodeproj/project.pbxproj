@@ -33,7 +33,7 @@
 		A5D7371D272EAC6D009CC3AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7371C272EAC6D009CC3AC /* SceneDelegate.swift */; };
 		F444EA782731B13A009B1097 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F444EA772731B13A009B1097 /* SnapKit */; };
 		F444EA7A2731B992009B1097 /* TabBarCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F444EA792731B992009B1097 /* TabBarCoreTests.swift */; };
-		F4C9F8A528E8DC0C0065D497 /* OffersTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F8A428E8DC0C0065D497 /* OffersTabTests.swift */; };
+		F4C9F8A528E8DC0C0065D497 /* OffersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F8A428E8DC0C0065D497 /* OffersTests.swift */; };
 		F4ECA96228E9992200525D64 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECA96128E9992200525D64 /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +84,7 @@
 		A5D7371A272EA197009CC3AC /* TabBarCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCore.swift; sourceTree = "<group>"; };
 		A5D7371C272EAC6D009CC3AC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F444EA792731B992009B1097 /* TabBarCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoreTests.swift; sourceTree = "<group>"; };
-		F4C9F8A428E8DC0C0065D497 /* OffersTabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OffersTabTests.swift; path = "N-PlateTests/Presentation/OffersTabTests.swift"; sourceTree = SOURCE_ROOT; };
+		F4C9F8A428E8DC0C0065D497 /* OffersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OffersTests.swift; path = "N-PlateTests/Presentation/OffersTests.swift"; sourceTree = SOURCE_ROOT; };
 		F4ECA96128E9992200525D64 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "N-Plate/Data/User.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -308,7 +308,7 @@
 		F4C9F8A628E8DD0F0065D497 /* Offers */ = {
 			isa = PBXGroup;
 			children = (
-				F4C9F8A428E8DC0C0065D497 /* OffersTabTests.swift */,
+				F4C9F8A428E8DC0C0065D497 /* OffersTests.swift */,
 			);
 			name = Offers;
 			sourceTree = "<group>";
@@ -533,7 +533,7 @@
 				A553F30A273C274600753BAD /* NetworkManagerTests.swift in Sources */,
 				F444EA7A2731B992009B1097 /* TabBarCoreTests.swift in Sources */,
 				A53EF43E272F0B0D00673970 /* TabBarControllerTests.swift in Sources */,
-				F4C9F8A528E8DC0C0065D497 /* OffersTabTests.swift in Sources */,
+				F4C9F8A528E8DC0C0065D497 /* OffersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

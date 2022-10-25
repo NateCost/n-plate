@@ -32,6 +32,14 @@ extension TabBarControllerTests {
 
     XCTAssertEqual(sut.viewControllers!.count, 3)
   }
+
+  func test_controller_has_rightStartingTabSelected_1() {
+    let sutCore = TabBarCoreSpy()
+    let sut = makeSUT(core: sutCore, startTab: .offersTab)
+    sut.viewWillAppear(false)
+
+    XCTAssertEqual(sut.selectedIndex, ApplicationTab.offersTab.rawValue)
+  }
 }
 // MARK: - Logic
 extension TabBarControllerTests {
