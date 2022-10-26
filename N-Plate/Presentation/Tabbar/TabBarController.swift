@@ -45,10 +45,7 @@ final class TabBarController: UITabBarController {
     fatalError("Loading this view controller from a nib or storyboards is unsupported")
   }
 
-  init(
-    core: TabBarCoreType, startTab: ApplicationTab,
-    scheduler: DispatchQueueAnyScheduler = .main
-  ) {
+  init(core: TabBarCoreType, scheduler: DispatchQueueAnyScheduler = .main) {
     self.core = core
     self.scheduler = scheduler
     super.init(nibName: nil, bundle: nil)

@@ -32,14 +32,6 @@ extension TabBarControllerTests {
 
     XCTAssertEqual(sut.viewControllers!.count, 3)
   }
-
-  func test_controller_has_rightStartingTabSelected_1() {
-    let sutCore = TabBarCoreSpy()
-    let sut = makeSUT(core: sutCore, startTab: .offersTab)
-    sut.viewWillAppear(false)
-
-    XCTAssertEqual(sut.selectedIndex, ApplicationTab.offersTab.rawValue)
-  }
 }
 // MARK: - Logic
 extension TabBarControllerTests {
@@ -67,7 +59,7 @@ extension TabBarControllerTests {
 class TabBarControllerTests: XCTestCase {
   let scheduler: TestScheduler = .init()
 
-  func makeSUT(core: TabBarCoreType, startTab: ApplicationTab = .agreementsTab) -> TabBarController {
-    TabBarController(core: core, startTab: startTab, scheduler: scheduler.eraseToAnyScheduler())
+  func makeSUT(core: TabBarCoreType) -> TabBarController {
+    TabBarController(core: core, scheduler: scheduler.eraseToAnyScheduler())
   }
 }
