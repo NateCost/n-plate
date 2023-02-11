@@ -5,8 +5,6 @@
 
 import Foundation
 
-protocol RequestType {}
-
 class SimpleNetworkRequest: RequestType {}
 
 enum NetworkError: Error, Equatable {
