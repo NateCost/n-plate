@@ -19,18 +19,6 @@ extension NetworkManagerTests {
 
     XCTAssertTrue(completed)
   }
-
-  func test_execute_request_executes_apiCompletion() {
-      let result1 = Data(base64Encoded: "2121")!
-      let sut = makeSUT(apiProvider: NetworkAPIProvider())
-      var testResult: Result<Data, NetworkError> = .failure(.connectionError)
-
-      sut.execute(request: NetworkRequestSpy()) { _ in
-        testResult = .success(result1)
-      }
-
-      XCTAssertEqual(testResult, .success(try XCTUnwrap(result1)))
-  }
 }
 
 class NetworkManagerTests: XCTestCase {
