@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0970B1B129983950008FEE00 /* StubbedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970B1B029983950008FEE00 /* StubbedRequest.swift */; };
-		0970B1B229983950008FEE00 /* StubbedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970B1B029983950008FEE00 /* StubbedRequest.swift */; };
+		0970B1B129983950008FEE00 /* StubbedNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970B1B029983950008FEE00 /* StubbedNetworkRequest.swift */; };
+		0970B1B229983950008FEE00 /* StubbedNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970B1B029983950008FEE00 /* StubbedNetworkRequest.swift */; };
 		0970B1B529983974008FEE00 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970B1B429983974008FEE00 /* RequestType.swift */; };
 		0970B1B629983974008FEE00 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970B1B429983974008FEE00 /* RequestType.swift */; };
-		A50005F4273C349A00CA9C38 /* SimpleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50005F3273C349A00CA9C38 /* SimpleRequest.swift */; };
+		0970B1B829983AAB008FEE00 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970B1B729983AAB008FEE00 /* NetworkError.swift */; };
+		0970B1B929983AAB008FEE00 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970B1B729983AAB008FEE00 /* NetworkError.swift */; };
+		A50005F4273C349A00CA9C38 /* SimpleNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50005F3273C349A00CA9C38 /* SimpleNetworkRequest.swift */; };
 		A50FAAC6272D92DB00ED593C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAAC5272D92DB00ED593C /* AppDelegate.swift */; };
 		A50FAACF272D92DB00ED593C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50FAACE272D92DB00ED593C /* Assets.xcassets */; };
 		A50FAAD2272D92DB00ED593C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50FAAD0272D92DB00ED593C /* LaunchScreen.storyboard */; };
@@ -59,9 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0970B1B029983950008FEE00 /* StubbedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubbedRequest.swift; sourceTree = "<group>"; };
+		0970B1B029983950008FEE00 /* StubbedNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubbedNetworkRequest.swift; sourceTree = "<group>"; };
 		0970B1B429983974008FEE00 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
-		A50005F3273C349A00CA9C38 /* SimpleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRequest.swift; sourceTree = "<group>"; };
+		0970B1B729983AAB008FEE00 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A50005F3273C349A00CA9C38 /* SimpleNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNetworkRequest.swift; sourceTree = "<group>"; };
 		A50FAAC2272D92DB00ED593C /* N-Plate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "N-Plate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50FAAC5272D92DB00ED593C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A50FAACE272D92DB00ED593C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,8 +135,8 @@
 		A50005F2273C348F00CA9C38 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				A50005F3273C349A00CA9C38 /* SimpleRequest.swift */,
-				0970B1B029983950008FEE00 /* StubbedRequest.swift */,
+				A50005F3273C349A00CA9C38 /* SimpleNetworkRequest.swift */,
+				0970B1B029983950008FEE00 /* StubbedNetworkRequest.swift */,
 				0970B1B429983974008FEE00 /* RequestType.swift */,
 			);
 			path = Requests;
@@ -261,6 +264,7 @@
 				A50005F2273C348F00CA9C38 /* Requests */,
 				A553F30B273C291700753BAD /* NetworkManager.swift */,
 				A553F30D273C303000753BAD /* APIProvider.swift */,
+				0970B1B729983AAB008FEE00 /* NetworkError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -526,7 +530,7 @@
 				A5374F8A27357D120001A7DD /* SecondTabCore.swift in Sources */,
 				A50FAAC6272D92DB00ED593C /* AppDelegate.swift in Sources */,
 				A5D7371D272EAC6D009CC3AC /* SceneDelegate.swift in Sources */,
-				0970B1B129983950008FEE00 /* StubbedRequest.swift in Sources */,
+				0970B1B129983950008FEE00 /* StubbedNetworkRequest.swift in Sources */,
 				A51A8C71272DB6B00073E892 /* NiblessViewController.swift in Sources */,
 				A5C1E3282731ECC4004FE5DE /* Combine+Extensions.swift in Sources */,
 				A5D73719272E9F06009CC3AC /* TabBarController.swift in Sources */,
@@ -535,7 +539,8 @@
 				A5374F8E27357DDC0001A7DD /* OffersCore.swift in Sources */,
 				A51A8C6E272DB3770073E892 /* AgreementsViewController.swift in Sources */,
 				A52904B4273328FA00C4EB4A /* TabBarProtocols.swift in Sources */,
-				A50005F4273C349A00CA9C38 /* SimpleRequest.swift in Sources */,
+				A50005F4273C349A00CA9C38 /* SimpleNetworkRequest.swift in Sources */,
+				0970B1B829983AAB008FEE00 /* NetworkError.swift in Sources */,
 				F4ECA96228E9992200525D64 /* User.swift in Sources */,
 				A553F30C273C291700753BAD /* NetworkManager.swift in Sources */,
 				A5374F96273584810001A7DD /* ApplicationTab.swift in Sources */,
@@ -549,10 +554,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A553F30A273C274600753BAD /* NetworkManagerTests.swift in Sources */,
+				0970B1B929983AAB008FEE00 /* NetworkError.swift in Sources */,
 				F444EA7A2731B992009B1097 /* TabBarCoreTests.swift in Sources */,
 				A53EF43E272F0B0D00673970 /* TabBarControllerTests.swift in Sources */,
 				F4C9F8A528E8DC0C0065D497 /* OffersTests.swift in Sources */,
-				0970B1B229983950008FEE00 /* StubbedRequest.swift in Sources */,
+				0970B1B229983950008FEE00 /* StubbedNetworkRequest.swift in Sources */,
 				0970B1B629983974008FEE00 /* RequestType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
