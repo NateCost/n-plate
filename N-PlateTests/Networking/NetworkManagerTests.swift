@@ -5,7 +5,6 @@
 
 import XCTest
 @testable import N_Plate
-import SwiftUI
 
 // MARK: - Instantiation
 extension NetworkManagerTests {
