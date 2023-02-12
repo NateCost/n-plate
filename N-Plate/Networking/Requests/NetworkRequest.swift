@@ -15,8 +15,9 @@ public struct NetworkRequest: RequestType {
   var cachePolicy: URLRequest.CachePolicy?
   var timeout: TimeInterval?
 
-  var urlRequest: URLRequest {
-    return URLRequest(url: URL(fileURLWithPath: ""))
+  var urlRequest: URLRequest? {
+    guard let url = URL(string: path) else { return nil }
+    return URLRequest(url: url)
   }
 
   public init(path: String) {
@@ -31,5 +32,5 @@ public struct NetworkRequest: RequestType {
 }
 
 protocol RequestType {
-  var urlRequest: URLRequest { get }
+  var urlRequest: URLRequest? { get }
 }

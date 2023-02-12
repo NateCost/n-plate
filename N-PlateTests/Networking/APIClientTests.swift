@@ -11,19 +11,50 @@ extension NetworkManagerTests {
   func test_execute_calls_networkSerice() {
     let networkServiceStub = NetworkServiceStub()
     let sut = makeSUT(networkService: networkServiceStub)
+    let path = "http://www.someurl.com/"
 
-    sut.execute(NetworkRequest(path: "")) { _ in }
+    sut.execute(NetworkRequest(path: path)) { _ in }
 
     XCTAssertEqual(networkServiceStub.log, [.didCallRequest])
+  }
+
+  func test_execute_fails_with_invalidRequest() {
+    let networkServiceStub = NetworkServiceStub()
+    let sut = makeSUT(networkService: networkServiceStub)
+    var result: Result<Data, NetworkError>?
+
+    sut.execute(NetworkRequest(path: "")) { result = $0 }
+
+    XCTAssertEqual(networkServiceStub.log, [])
+    if let result = result {
+      XCTAssertEqual(result, .failure(.invalidRequest))
+    } else {
+      XCTFail()
+    }
   }
 
   func test_stubbed_client_execute_calls_networkSerice() {
     let networkServiceStub = NetworkServiceStub()
     let sut = makeStubbedSUT(networkService: networkServiceStub)
 
-    sut.execute(NetworkRequest(path: "")) { _ in }
+    sut.execute(NetworkRequest(path: "http://www.someurl.com/")) { _ in }
 
     XCTAssertEqual(networkServiceStub.log, [.didCallRequest])
+  }
+
+  func test_srubbed_client_execute_fails_with_invalidRequest() {
+    let networkServiceStub = NetworkServiceStub()
+    let sut = makeStubbedSUT(networkService: networkServiceStub)
+    var result: Result<Data, NetworkError>?
+
+    sut.execute(NetworkRequest(path: "")) { result = $0 }
+
+    XCTAssertEqual(networkServiceStub.log, [])
+    if let result = result {
+      XCTAssertEqual(result, .failure(.invalidRequest))
+    } else {
+      XCTFail()
+    }
   }
 }
 

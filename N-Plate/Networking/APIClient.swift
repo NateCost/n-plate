@@ -18,7 +18,12 @@ final class APIClient: APIClientType {
   }
 
   func execute(_ request: RequestType, completion: @escaping (Result<Data, NetworkError>) -> Void) {
-    networkService.request(urlRequest: request.urlRequest) { _, _, _ in
+    guard let urlRequest = request.urlRequest else {
+      completion(.failure(.invalidRequest))
+      return
+    }
+
+    networkService.request(urlRequest: urlRequest) { _, _, _ in
 
     }
   }
@@ -32,7 +37,12 @@ final class StubbedAPIClient: APIClientType {
   }
 
   func execute(_ request: RequestType, completion: @escaping (Result<Data, NetworkError>) -> Void) {
-    networkService.request(urlRequest: request.urlRequest) { _, _, _ in
+    guard let urlRequest = request.urlRequest else {
+      completion(.failure(.invalidRequest))
+      return
+    }
+
+    networkService.request(urlRequest: urlRequest) { _, _, _ in
 
     }
   }
