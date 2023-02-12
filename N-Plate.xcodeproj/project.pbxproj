@@ -10,6 +10,7 @@
 		0970B1B829983AAB008FEE00 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970B1B729983AAB008FEE00 /* NetworkError.swift */; };
 		0970B1B929983AAB008FEE00 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970B1B729983AAB008FEE00 /* NetworkError.swift */; };
 		0970B1BD2999129E008FEE00 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970B1BB2999129E008FEE00 /* APIClientTests.swift */; };
+		0970B1C029991790008FEE00 /* NetworkServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970B1BF29991790008FEE00 /* NetworkServiceStub.swift */; };
 		A50005F4273C349A00CA9C38 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50005F3273C349A00CA9C38 /* NetworkRequest.swift */; };
 		A50FAAC6272D92DB00ED593C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50FAAC5272D92DB00ED593C /* AppDelegate.swift */; };
 		A50FAACF272D92DB00ED593C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50FAACE272D92DB00ED593C /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 /* Begin PBXFileReference section */
 		0970B1B729983AAB008FEE00 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		0970B1BB2999129E008FEE00 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		0970B1BF29991790008FEE00 /* NetworkServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceStub.swift; sourceTree = "<group>"; };
 		A50005F3273C349A00CA9C38 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		A50FAAC2272D92DB00ED593C /* N-Plate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "N-Plate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50FAAC5272D92DB00ED593C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 			children = (
 			);
 			path = Stubs;
+			sourceTree = "<group>";
+		};
+		0970B1BE2999176F008FEE00 /* Stubs & Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0970B1BF29991790008FEE00 /* NetworkServiceStub.swift */,
+			);
+			path = "Stubs & Mocks";
 			sourceTree = "<group>";
 		};
 		A50005F2273C348F00CA9C38 /* Requests */ = {
@@ -236,6 +246,7 @@
 		A553F308273C272B00753BAD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				0970B1BE2999176F008FEE00 /* Stubs & Mocks */,
 				0970B1BB2999129E008FEE00 /* APIClientTests.swift */,
 			);
 			path = Networking;
@@ -545,6 +556,7 @@
 			files = (
 				0970B1B929983AAB008FEE00 /* NetworkError.swift in Sources */,
 				F444EA7A2731B992009B1097 /* TabBarCoreTests.swift in Sources */,
+				0970B1C029991790008FEE00 /* NetworkServiceStub.swift in Sources */,
 				A53EF43E272F0B0D00673970 /* TabBarControllerTests.swift in Sources */,
 				0970B1BD2999129E008FEE00 /* APIClientTests.swift in Sources */,
 				F4C9F8A528E8DC0C0065D497 /* OffersTests.swift in Sources */,

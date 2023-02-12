@@ -36,15 +36,3 @@ class NetworkManagerTests: XCTestCase {
     StubbedAPIClient(networkService: networkService)
   }
 }
-
-final class NetworkServiceStub: NetworkService {
-  var log: [LoggableAction] = []
-
-  func request(urlRequest: URLRequest, completion: @escaping (Response) -> Void) {
-    log.append(.didCallRequest)
-  }
-
-  enum LoggableAction {
-    case didCallRequest
-  }
-}
