@@ -6,8 +6,7 @@
 import XCTest
 @testable import N_Plate
 
-// MARK: - Instantiation
-extension NetworkManagerTests {
+extension APIClientTests {
   func test_execute_calls_networkSerice() {
     let networkServiceStub = NetworkServiceStub()
     let sut = makeSUT(networkService: networkServiceStub)
@@ -32,7 +31,9 @@ extension NetworkManagerTests {
       XCTFail()
     }
   }
-
+}
+// MARK: - Stubbed client tests
+extension APIClientTests {
   func test_stubbed_client_execute_calls_networkSerice() {
     let networkServiceStub = NetworkServiceStub()
     let sut = makeStubbedSUT(networkService: networkServiceStub)
@@ -42,7 +43,7 @@ extension NetworkManagerTests {
     XCTAssertEqual(networkServiceStub.log, [.didCallRequest])
   }
 
-  func test_srubbed_client_execute_fails_with_invalidRequest() {
+  func test_stubbed_client_execute_fails_with_invalidRequest() {
     let networkServiceStub = NetworkServiceStub()
     let sut = makeStubbedSUT(networkService: networkServiceStub)
     var result: Result<Data, NetworkError>?
@@ -58,7 +59,7 @@ extension NetworkManagerTests {
   }
 }
 
-class NetworkManagerTests: XCTestCase {
+final class APIClientTests: XCTestCase {
   func makeSUT(networkService: NetworkService = DefaultNetworkService()) -> APIClient {
     APIClient(networkService: networkService)
   }
