@@ -6,5 +6,6 @@
 import Foundation
 
 enum NetworkError: Error, Equatable {
-  case connectionError
+  case noConnection
+  case invalidRequest
 }

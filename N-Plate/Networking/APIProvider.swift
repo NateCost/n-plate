@@ -11,7 +11,15 @@ protocol APIProvider {
 }
 
 final class NetworkAPIProvider: APIProvider {
+  let networkService: NetworkService
+
+  init(networkService: NetworkService) {
+    self.networkService = networkService
+  }
+
   func execute(_ request: RequestType, completion: @escaping (Result<Data, NetworkError>) -> Void) {
-    completion(.success(Data()))
+    networkService.request(urlRequest: request.urlRequest) { _, _, _ in
+
+    }
   }
 }
