@@ -31,9 +31,14 @@ final class APIClient: APIClientType {
 
 final class StubbedAPIClient: APIClientType {
   let networkService: NetworkService
+  var stubs: [Stub] = []
 
   init(networkService: NetworkService) {
     self.networkService = networkService
+  }
+
+  func addStub(_ stub: Stub) {
+    stubs.append(stub)
   }
 
   func execute(_ request: RequestType, completion: @escaping (Result<Data, NetworkError>) -> Void) {
@@ -45,5 +50,10 @@ final class StubbedAPIClient: APIClientType {
     networkService.request(urlRequest: urlRequest) { _, _, _ in
 
     }
+  }
+
+  struct Stub {
+    let path: String
+    let response: [String: AnyObject]
   }
 }

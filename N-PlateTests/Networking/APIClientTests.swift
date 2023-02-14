@@ -34,6 +34,16 @@ extension APIClientTests {
 }
 // MARK: - Stubbed client tests
 extension APIClientTests {
+  func test_stubbed_client_holds_stubs() {
+    let networkServiceStub = NetworkServiceStub()
+    let sut = makeStubbedSUT(networkService: networkServiceStub)
+    let stub = StubbedAPIClient.Stub(path: "http://www.someurl.com/", response: [:])
+
+    sut.addStub(stub)
+
+    XCTAssertEqual(sut.stubs.count, 1)
+  }
+
   func test_stubbed_client_execute_calls_networkSerice() {
     let networkServiceStub = NetworkServiceStub()
     let sut = makeStubbedSUT(networkService: networkServiceStub)
