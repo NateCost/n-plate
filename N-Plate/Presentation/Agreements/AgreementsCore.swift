@@ -5,6 +5,16 @@
 
 import Foundation
 
-protocol AgreementsCoreType {}
+protocol AgreementsCoreType {
+  var agreements: [Agreement] { get }
+}
 
-final class AgreementsCore: AgreementsCoreType {}
+final class AgreementsCore: AgreementsCoreType {
+  var agreements: [Agreement] = []
+}
+
+struct Agreement {
+  let name: String
+  let description: String
+}
+
