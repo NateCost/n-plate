@@ -1,7 +1,5 @@
-//
 //  TabBarCoreTests.swift
 //  Created by Ilya Sakalou on 02/11/2021.
-//
 
 import XCTest
 import UIKit

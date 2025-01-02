@@ -1,12 +1,14 @@
-//  AgreementsViewController.swift
+//
+//  SomeViewController.swift
 //  Created by Ilya Sakalou on 30/10/2021.
+//
 
 import UIKit
 
-final class AgreementsViewController: NiblessViewController {
-  private let core: AgreementsCoreType
+final class FirstTabViewController: NiblessViewController {
+  private let core: FirstTabCoreType
 
-  init(core: AgreementsCoreType) {
+  init(core: FirstTabCoreType) {
     self.core = core
     super.init()
   }

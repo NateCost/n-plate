@@ -1,12 +1,14 @@
-//  OffersViewController.swift
+//
+//  ThirdTabViewController.swift
 //  Created by Ilya Sakalou on 05/11/2021.
+//
 
 import UIKit
 
-final class OffersViewController: NiblessViewController {
-  private let core: OffersCoreType
+final class ThirdTabViewController: NiblessViewController {
+  private let core: ThirdTabCoreType
 
-  init(core: OffersCoreType) {
+  init(core: ThirdTabCoreType) {
     self.core = core
     super.init()
   }

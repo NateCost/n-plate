@@ -1,7 +1,5 @@
-//
 //  NiblessViewController.swift
 //  Created by Ilya Sakalou on 30/10/2021.
-//
 
 import UIKit
 

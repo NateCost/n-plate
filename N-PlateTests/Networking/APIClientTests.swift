@@ -1,7 +1,5 @@
-//
 //  APIClientTests.swift
 //  Created by Ilya SAKALOU on 12/02/2023.
-//
 
 import XCTest
 @testable import N_Plate

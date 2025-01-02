@@ -1,7 +1,5 @@
-//
 //  User.swift
 //  Created by Ilya Sakalou on 02/10/2022.
-//
 
 import Foundation
 
