@@ -15,4 +15,3 @@ struct Agreement {
   let name: String
   let description: String
 }
-

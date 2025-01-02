@@ -17,8 +17,6 @@
 		A50FAAD2272D92DB00ED593C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50FAAD0272D92DB00ED593C /* LaunchScreen.storyboard */; };
 		A51A8C6E272DB3770073E892 /* AgreementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C6D272DB3770073E892 /* AgreementsViewController.swift */; };
 		A51A8C71272DB6B00073E892 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A8C70272DB6B00073E892 /* NiblessViewController.swift */; };
-		A51E379427331FBF009E6C5E /* SchedulerKit in Frameworks */ = {isa = PBXBuildFile; productRef = A51E379327331FBF009E6C5E /* SchedulerKit */; };
-		A51E379627331FBF009E6C5E /* SchedulerKitTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = A51E379527331FBF009E6C5E /* SchedulerKitTestUtils */; };
 		A52904B4273328FA00C4EB4A /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52904B3273328FA00C4EB4A /* TabBarProtocols.swift */; };
 		A5374F8827357CED0001A7DD /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374F8727357CED0001A7DD /* SecondTabViewController.swift */; };
 		A5374F8A27357D120001A7DD /* SecondTabCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5374F8927357D120001A7DD /* SecondTabCore.swift */; };
@@ -37,6 +35,11 @@
 		F43EBFB42A0C156900873C1C /* AgreementsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43EBFB32A0C156900873C1C /* AgreementsService.swift */; };
 		F444EA782731B13A009B1097 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F444EA772731B13A009B1097 /* SnapKit */; };
 		F444EA7A2731B992009B1097 /* TabBarCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F444EA792731B992009B1097 /* TabBarCoreTests.swift */; };
+		F49683E42D26EEB100EA42E9 /* SchedulerKit in Frameworks */ = {isa = PBXBuildFile; productRef = F49683E32D26EEB100EA42E9 /* SchedulerKit */; };
+		F49683E62D26EEB600EA42E9 /* SchedulerKit in Frameworks */ = {isa = PBXBuildFile; productRef = F49683E52D26EEB600EA42E9 /* SchedulerKit */; };
+		F4C4564C2D26EDCC00902123 /* SchedulerKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4C4564B2D26EDCC00902123 /* SchedulerKit */; };
+		F4C456502D26EE0700902123 /* SchedulerKitTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = F4C4564F2D26EE0700902123 /* SchedulerKitTestUtils */; };
+		F4C456522D26EE0D00902123 /* SchedulerKitTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = F4C456512D26EE0D00902123 /* SchedulerKitTestUtils */; };
 		F4C9F8A528E8DC0C0065D497 /* OffersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F8A428E8DC0C0065D497 /* OffersTests.swift */; };
 		F4ECA96228E9992200525D64 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECA96128E9992200525D64 /* User.swift */; };
 /* End PBXBuildFile section */
@@ -92,6 +95,8 @@
 		A5D7371C272EAC6D009CC3AC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F43EBFB32A0C156900873C1C /* AgreementsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementsService.swift; sourceTree = "<group>"; };
 		F444EA792731B992009B1097 /* TabBarCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoreTests.swift; sourceTree = "<group>"; };
+		F49DCACA2D26F28200C3FF32 /* SchedulerKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SchedulerKit; sourceTree = "<group>"; };
+		F49DCACB2D26F2DD00C3FF32 /* SchedulerKitTestUtils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SchedulerKitTestUtils; sourceTree = "<group>"; };
 		F4C9F8A428E8DC0C0065D497 /* OffersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OffersTests.swift; path = "N-PlateTests/Presentation/OffersTests.swift"; sourceTree = SOURCE_ROOT; };
 		F4ECA96128E9992200525D64 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "N-Plate/Data/User.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -102,7 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F444EA782731B13A009B1097 /* SnapKit in Frameworks */,
-				A51E379427331FBF009E6C5E /* SchedulerKit in Frameworks */,
+				F4C4564C2D26EDCC00902123 /* SchedulerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A51E379627331FBF009E6C5E /* SchedulerKitTestUtils in Frameworks */,
+				F4C456502D26EE0700902123 /* SchedulerKitTestUtils in Frameworks */,
+				F49683E42D26EEB100EA42E9 /* SchedulerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +124,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C456522D26EE0D00902123 /* SchedulerKitTestUtils in Frameworks */,
+				F49683E62D26EEB600EA42E9 /* SchedulerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +158,12 @@
 		A50FAAB9272D92DB00ED593C = {
 			isa = PBXGroup;
 			children = (
+				F49DCACB2D26F2DD00C3FF32 /* SchedulerKitTestUtils */,
+				F49DCACA2D26F28200C3FF32 /* SchedulerKit */,
 				A50FAAC4272D92DB00ED593C /* N-Plate */,
 				A50FAADB272D92DB00ED593C /* N-PlateTests */,
 				A50FAAE6272D92DB00ED593C /* N-PlateUITests */,
+				F4C4564A2D26EDCC00902123 /* Frameworks */,
 				A50FAAC3272D92DB00ED593C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -170,6 +181,7 @@
 		A50FAAC4272D92DB00ED593C /* N-Plate */ = {
 			isa = PBXGroup;
 			children = (
+				F43EFF4D2D26D49E004A5BCD /* Playgrounds */,
 				A51A8C6C272DB1160073E892 /* Application */,
 				A5D73711272E85D3009CC3AC /* Navigation */,
 				A5D73710272E8584009CC3AC /* Presentation */,
@@ -332,6 +344,20 @@
 			path = Offers;
 			sourceTree = "<group>";
 		};
+		F43EFF4D2D26D49E004A5BCD /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		F4C4564A2D26EDCC00902123 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F4C9F8A628E8DD0F0065D497 /* Offers */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,7 +395,7 @@
 			name = "N-Plate";
 			packageProductDependencies = (
 				F444EA772731B13A009B1097 /* SnapKit */,
-				A51E379327331FBF009E6C5E /* SchedulerKit */,
+				F4C4564B2D26EDCC00902123 /* SchedulerKit */,
 			);
 			productName = "N-Plate";
 			productReference = A50FAAC2272D92DB00ED593C /* N-Plate.app */;
@@ -390,7 +416,8 @@
 			);
 			name = "N-PlateTests";
 			packageProductDependencies = (
-				A51E379527331FBF009E6C5E /* SchedulerKitTestUtils */,
+				F4C4564F2D26EE0700902123 /* SchedulerKitTestUtils */,
+				F49683E32D26EEB100EA42E9 /* SchedulerKit */,
 			);
 			productName = "N-PlateTests";
 			productReference = A50FAAD8272D92DB00ED593C /* N-PlateTests.xctest */;
@@ -420,8 +447,9 @@
 		A50FAABA272D92DB00ED593C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					A50FAAC1272D92DB00ED593C = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -448,7 +476,6 @@
 			mainGroup = A50FAAB9272D92DB00ED593C;
 			packageReferences = (
 				F444EA762731B13A009B1097 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				A51E379227331FBF009E6C5E /* XCRemoteSwiftPackageReference "SchedulerKit" */,
 			);
 			productRefGroup = A50FAAC3272D92DB00ED593C /* Products */;
 			projectDirPath = "";
@@ -641,6 +668,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -702,6 +730,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -727,14 +756,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U9A52X52G8;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "N-Plate/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nirma.N-Plate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -747,14 +780,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U9A52X52G8;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "N-Plate/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nirma.N-Plate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -763,11 +800,10 @@
 		A50FAAF0272D92DB00ED593C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "N-PlateTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -775,8 +811,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nirma.N-PlateTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/N-Plate.app/N-Plate";
 			};
 			name = Debug;
@@ -784,11 +823,10 @@
 		A50FAAF1272D92DB00ED593C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "N-PlateTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -796,8 +834,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nirma.N-PlateTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/N-Plate.app/N-Plate";
 			};
 			name = Release;
@@ -805,10 +846,10 @@
 		A50FAAF3272D92DB00ED593C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "N-PlateUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -816,9 +857,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nirma.N-PlateUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = "N-Plate";
 			};
 			name = Debug;
@@ -826,10 +870,10 @@
 		A50FAAF4272D92DB00ED593C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "N-PlateUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -837,8 +881,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nirma.N-PlateUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = "N-Plate";
 			};
 			name = Release;
@@ -885,14 +932,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A51E379227331FBF009E6C5E /* XCRemoteSwiftPackageReference "SchedulerKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scheduler-kit/SchedulerKit";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		F444EA762731B13A009B1097 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -904,20 +943,30 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A51E379327331FBF009E6C5E /* SchedulerKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A51E379227331FBF009E6C5E /* XCRemoteSwiftPackageReference "SchedulerKit" */;
-			productName = SchedulerKit;
-		};
-		A51E379527331FBF009E6C5E /* SchedulerKitTestUtils */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A51E379227331FBF009E6C5E /* XCRemoteSwiftPackageReference "SchedulerKit" */;
-			productName = SchedulerKitTestUtils;
-		};
 		F444EA772731B13A009B1097 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F444EA762731B13A009B1097 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		F49683E32D26EEB100EA42E9 /* SchedulerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SchedulerKit;
+		};
+		F49683E52D26EEB600EA42E9 /* SchedulerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SchedulerKit;
+		};
+		F4C4564B2D26EDCC00902123 /* SchedulerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SchedulerKit;
+		};
+		F4C4564F2D26EE0700902123 /* SchedulerKitTestUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SchedulerKitTestUtils;
+		};
+		F4C456512D26EE0D00902123 /* SchedulerKitTestUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SchedulerKitTestUtils;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

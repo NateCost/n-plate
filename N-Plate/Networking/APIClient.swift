@@ -22,7 +22,6 @@ final class APIClient: APIClientType {
     }
 
     networkService.request(urlRequest: urlRequest) { _, _, _ in
-
     }
   }
 }
@@ -46,7 +45,6 @@ final class StubbedAPIClient: APIClientType {
     }
 
     networkService.request(urlRequest: urlRequest) { _, _, _ in
-
     }
   }
 

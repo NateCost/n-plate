@@ -1,25 +1,15 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "SchedulerKit",
-        "repositoryURL": "https://github.com/scheduler-kit/SchedulerKit",
-        "state": {
-          "branch": "main",
-          "revision": "3ba85db30629ae0347da7bb362b5080eae6053f4",
-          "version": null
-        }
-      },
-      {
-        "package": "SnapKit",
-        "repositoryURL": "https://github.com/SnapKit/SnapKit",
-        "state": {
-          "branch": null,
-          "revision": "f222cbdf325885926566172f6f5f06af95473158",
-          "version": "5.6.0"
-        }
+  "originHash" : "4cdad746817ac9ed37e44dbe90a2ff25fc018954899b7d513e41a4bfc70f065a",
+  "pins" : [
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit",
+      "state" : {
+        "revision" : "f222cbdf325885926566172f6f5f06af95473158",
+        "version" : "5.6.0"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 3
 }
